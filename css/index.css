@@ -1,0 +1,19 @@
+h3 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.logo-web {
+  font-family: "Raleway";
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  color: #2196f3;
+}
+
+.logo-studio {
+  color: #000000;
+}
