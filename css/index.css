@@ -1,19 +1,86 @@
+body {
+  font-family: "Roboto" sans-serif;
+}
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #2196f3;
+}
+a:focus {
+  color: #2196f3;
+}
+
 h3 {
-  font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
 }
-
+header {
+  display: inline;
+}
 .logo-web {
   font-family: "Raleway";
-  text-decoration: none;
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
   color: #2196f3;
+  left: 215px;
+  top: 24px;
 }
 
 .logo-studio {
   color: #000000;
+}
+
+.button-area {
+  position: absolute;
+  width: 1600px;
+  height: 600px;
+  left: 0px;
+  top: 80px;
+  background: #2f303a;
+}
+.effective {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.button-order {
+  background: #2196f3;
+  width: 200px;
+  height: 50px;
+  color: white;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.menu-nav {
+  position: absolute;
+  left: 453px;
+  top: 32px;
+}
+.menu-nav li {
+  display: inline;
+}
+
+.email {
+  position: absolute;
+  left: 1078px;
+  top: 32px;
+  color: #757575;
+}
+.tel {
+  position: absolute;
+  left: 1263px;
+  top: 32px;
+  color: #757575;
 }
