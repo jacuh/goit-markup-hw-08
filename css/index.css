@@ -35,7 +35,6 @@ header {
 }
 
 .button-area {
-  position: absolute;
   width: 1600px;
   height: 600px;
   left: 0px;
@@ -52,15 +51,18 @@ header {
   color: #ffffff;
 }
 .button-order {
-  background: #2196f3;
+  background-color: #2196f3;
   width: 200px;
   height: 50px;
+  left: 700px;
+  top: 430px;
   color: white;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 30px;
+  cursor: pointer;
 }
 
 .menu-nav {
@@ -83,4 +85,57 @@ header {
   left: 1263px;
   top: 32px;
   color: #757575;
+}
+
+.lorem {
+  width: 1170px;
+  height: 101px;
+  left: 215px;
+  top: 774px;
+}
+.lorem dt {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #212121;
+}
+
+.lorem dd {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+.what-we-doing {
+  left: 213px;
+  top: 969px;
+}
+.what-we-doing h2 {
+  text-align: center;
+  left: 622px;
+  top: 969px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
+.what-we-doing li {
+  display: inline;
+}
+
+.team {
+  background: #f5f4fa;
+  width: 1600px;
+  height: 648px;
+  left: 0px;
+  top: 1449px;
+}
+.team li {
+  display: inline;
 }
