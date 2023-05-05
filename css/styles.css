@@ -101,7 +101,6 @@ header {
 }
 
 .lorem dd {
-  font-weight: 400;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
@@ -162,7 +161,6 @@ header {
 }
 
 .team p {
-  font-weight: 400;
   font-size: 16px;
   line-height: 19px;
   text-align: center;
@@ -180,7 +178,6 @@ footer {
 
 footer a {
   text-decoration: none;
-  font-weight: 400;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
@@ -188,7 +185,6 @@ footer a {
 }
 
 footer p {
-  font-weight: 400;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
@@ -220,7 +216,6 @@ footer p {
 .portfolio p {
   font-family: "Roboto";
   font-style: normal;
-  font-weight: 400;
   font-size: 16px;
   line-height: 30px;
   letter-spacing: 0.03em;
@@ -234,6 +229,7 @@ footer p {
   border-radius: 4px;
   font-weight: 500;
   font: bold 16px sans-serif;
+  cursor: pointer;
 }
 
 .filters button:hover {
