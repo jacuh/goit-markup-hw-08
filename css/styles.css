@@ -1,5 +1,5 @@
 body {
-  font-family: "Roboto" sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 a {
   text-decoration: none;
@@ -66,7 +66,6 @@ header {
 }
 
 .menu-nav {
-  position: absolute;
   left: 453px;
   top: 32px;
 }
@@ -75,13 +74,12 @@ header {
 }
 
 .email {
-  position: absolute;
   left: 1078px;
   top: 32px;
   color: #757575;
 }
+
 .tel {
-  position: absolute;
   left: 1263px;
   top: 32px;
   color: #757575;
@@ -137,5 +135,111 @@ header {
   top: 1449px;
 }
 .team li {
-  display: inline;
+  width: 270px;
+  height: 368px;
+  left: 215px;
+  top: 1635px;
+
+  background: #ffffff;
+}
+
+.team h3 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
+.team h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
+.team p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+footer {
+  width: 1600px;
+  height: 252px;
+  left: 0px;
+  top: 2097px;
+  background: #2f303a;
+}
+
+footer a {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+footer p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+
+.portfolio {
+  width: 1170px;
+  height: 1360px;
+  left: 215px;
+  top: 179px;
+}
+
+.portfolio > td {
+  width: 370px;
+  height: 404px;
+}
+
+.portfolio h3 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+  color: #212121;
+}
+
+.portfolio p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+.filters button {
+  width: 121px;
+  height: 38px;
+  background: #f5f4fa;
+  border-radius: 4px;
+  font-weight: 500;
+  font: bold 16px sans-serif;
+}
+
+.filters button:hover {
+  background: #2196f3;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  color: #ffffff;
 }
