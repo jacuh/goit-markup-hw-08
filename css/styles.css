@@ -36,7 +36,6 @@ header {
 
 .button-area {
   width: 1600px;
-  height: 600px;
   left: 0px;
   top: 80px;
   background: #2f303a;
@@ -87,7 +86,6 @@ header {
 
 .lorem {
   width: 1170px;
-  height: 101px;
   left: 215px;
   top: 774px;
 }
@@ -129,13 +127,11 @@ header {
 .team {
   background: #f5f4fa;
   width: 1600px;
-  height: 648px;
   left: 0px;
   top: 1449px;
 }
 .team li {
   width: 270px;
-  height: 368px;
   left: 215px;
   top: 1635px;
 
@@ -170,7 +166,6 @@ header {
 
 footer {
   width: 1600px;
-  height: 252px;
   left: 0px;
   top: 2097px;
   background: #2f303a;
@@ -193,7 +188,6 @@ footer p {
 
 .portfolio {
   width: 1170px;
-  height: 1360px;
   left: 215px;
   top: 179px;
 }
@@ -224,7 +218,6 @@ footer p {
 
 .filters button {
   width: 121px;
-  height: 38px;
   background: #f5f4fa;
   border-radius: 4px;
   font-weight: 500;
