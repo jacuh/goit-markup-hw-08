@@ -3,6 +3,7 @@ body {
 }
 a {
   text-decoration: none;
+  color: #212121;
 }
 
 a:hover {
@@ -41,6 +42,11 @@ footer .logo-studio {
 
 footer .logo-web {
   color: #2196f3;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  font-family: "Raleway";
 }
 
 .logo-studio {
@@ -76,7 +82,6 @@ footer .logo-web {
   line-height: 30px;
   cursor: pointer;
   box-shadow: 0px 4px 4px rgba(17, 16, 16, 0.15);
-  border-radius: 4px;
 }
 
 .menu-nav {
@@ -188,6 +193,7 @@ footer .logo-web {
   text-align: center;
   letter-spacing: 0.03em;
   color: #757575;
+  padding-bottom: 30;
 }
 
 footer {
@@ -218,7 +224,7 @@ footer p {
   top: 179px;
 }
 
-.portfolio > td {
+.portfolio td {
   width: 370px;
   height: 404px;
   border: 1px solid #eeeeee;
@@ -244,6 +250,7 @@ footer p {
 }
 
 .filters button {
+  height: 38px;
   width: 121px;
   background: #f5f4fa;
   border-radius: 4px;
