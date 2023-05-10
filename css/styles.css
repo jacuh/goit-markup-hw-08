@@ -1,6 +1,7 @@
 body {
   font-family: "Roboto", sans-serif;
 }
+
 a {
   text-decoration: none;
   color: #212121;
@@ -239,6 +240,7 @@ footer p {
   line-height: 36px;
   letter-spacing: 0.06em;
   color: #212121;
+  padding-left: 24px;
 }
 
 .portfolio p {
@@ -248,6 +250,7 @@ footer p {
   line-height: 30px;
   letter-spacing: 0.03em;
   color: #757575;
+  padding-left: 24px;
 }
 
 .filters button {
