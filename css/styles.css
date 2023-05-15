@@ -18,16 +18,21 @@ a:visited {
   color: default;
 }
 
+.containter {
+  width: 1200px;
+}
+
 h3 {
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
 }
 header {
-  display: inline;
 }
 
 header .logo-web {
+  margin-left: 215px;
+  margin-top: 24px;
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
@@ -86,11 +91,11 @@ footer .logo-web {
 }
 
 .menu-nav {
-  left: 453px;
-  top: 32px;
+  margin-left: 453px;
+  margin-top: 32px;
 }
 .menu-nav li {
-  display: inline;
+  display: inline-block;
 }
 
 .email {
@@ -106,11 +111,11 @@ footer .logo-web {
 }
 
 .lorem {
-  width: 1170px;
+  list-style-type: none;
   left: 215px;
   top: 774px;
 }
-.lorem dt {
+.lorem h3 {
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
@@ -119,7 +124,9 @@ footer .logo-web {
   color: #212121;
 }
 
-.lorem dd {
+.lorem li {
+  display: inline-block;
+  width: 270px;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
@@ -161,6 +168,7 @@ footer .logo-web {
 }
 
 .team li {
+  display: inline-block;
   width: 270px;
   left: 215px;
   top: 1635px;
