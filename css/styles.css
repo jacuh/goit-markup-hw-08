@@ -1,13 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .containter {
   display: block;
   width: 1200px;
-  margin: auto;
 }
 
 .header-containter {
-  display: flex;
-  align-items: flex-start;
-  box-sizing: content-box;
+  display: inline;
 }
 
 body {
@@ -38,10 +40,12 @@ h3 {
 
 section {
   padding-block: 94px;
+  width: 1600px;
 }
 
 header {
   border: 1px solid #ececec;
+  width: 1600px;
 }
 
 header .logo-web {
@@ -73,22 +77,26 @@ footer .logo-web {
   color: #000000;
 }
 
-.button-area {
-  box-sizing: border-box;
+.b-a-container {
+  text-align: center;
+  padding-top: 200px;
+}
 
+.button-area {
   width: 1600px;
   height: 600px;
   left: 0px;
   top: 80px;
   background: #2f303a;
+  padding: 0;
 }
 
 .effective {
-  margin-inline: auto;
+  margin-block: 0px 40px;
   font-weight: 900;
   font-size: 44px;
   line-height: 60px;
-  text-align: center;
+
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
@@ -98,7 +106,7 @@ footer .logo-web {
   border-radius: 4px;
   width: 200px;
   height: 50px;
-  margin-left: 700px;
+
   top: 430px;
   color: white;
   font-family: "Roboto";
@@ -130,12 +138,13 @@ footer .logo-web {
   color: #757575;
 }
 
-.lorem {
-  list-style-type: none;
+.lorem-container {
+  box-sizing: content-box;
+  text-align: center;
 }
 
-.lorem ul {
-  margin-left: 0px;
+.lorem {
+  list-style-type: none;
 }
 
 .lorem h3 {
@@ -145,6 +154,7 @@ footer .logo-web {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #212121;
+  padding-bottom: 10px;
 }
 
 .lorem li {
@@ -154,22 +164,24 @@ footer .logo-web {
   line-height: 24px;
   letter-spacing: 0.03em;
   color: #757575;
+  text-align: left;
 }
 
 .lorem li:nth-child(n + 2) {
   padding: 30px;
 }
 
-.lorem li:first-child {
-  margin-left: 215px;
+.wwd-container {
+  width: 1600px;
+  text-align: center;
 }
 
 .what-we-doing {
-  padding-top: 0px;
+  padding-block: 0px;
 }
 
 .what-we-doing h2 {
-  margin-left: 624px;
+  padding-bottom: 50px;
   left: 622px;
   top: 969px;
   font-weight: 700;
@@ -180,8 +192,8 @@ footer .logo-web {
 }
 
 .what-we-doing ul {
-  margin-left: 215px;
   list-style-type: none;
+  padding-bottom: 94px;
 }
 
 .what-we-doing li {
@@ -245,12 +257,12 @@ footer .logo-web {
 }
 
 .footer-containter {
-  padding-left: 215px;
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 footer {
+  box-sizing: border-box;
+  padding-left: 215px;
+  padding-block: 60px;
   width: 1600px;
   left: 0px;
   top: 2097px;
