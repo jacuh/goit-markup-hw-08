@@ -140,7 +140,7 @@ footer .logo-web {
 }
 
 .lorem-container {
-  box-sizing: content-box;
+  box-sizing: border-box;
   text-align: center;
 }
 
@@ -168,8 +168,12 @@ footer .logo-web {
   text-align: left;
 }
 
-.lorem li:nth-child(n + 2) {
+.lorem li {
   padding: 30px;
+}
+
+.lorem li:first-of-type {
+  padding-left: 0px;
 }
 
 .wwd-container {
