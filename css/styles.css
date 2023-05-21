@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 .containter {
@@ -291,7 +292,29 @@ footer p {
 }
 
 .portfolio-containter {
+  text-align: center;
   box-sizing: border-box;
+}
+
+.portfolio-cards {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 215px;
+  gap: 10px;
+}
+
+figure {
+  display: flex;
+  flex-direction: column;
+  flex-basis: calc((100% - 20px) / 3);
+  margin: unset;
+  border: 1px solid #eeeeee;
+}
+
+img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 .portfolio table {
@@ -341,9 +364,8 @@ footer p {
 }
 
 .filters {
-  margin-bottom: 50px;
-  margin-top: 94px;
-  margin-left: 510px;
+  padding-left: 510px;
+  padding-bottom: 50px;
 }
 
 .filters button {
