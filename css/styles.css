@@ -1,3 +1,15 @@
+.containter {
+  display: block;
+  width: 1200px;
+  margin: auto;
+}
+
+.header-containter {
+  display: flex;
+  align-items: flex-start;
+  box-sizing: content-box;
+}
+
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -18,15 +30,14 @@ a:visited {
   color: default;
 }
 
-.containter {
-  box-sizing: border-box;
-  width: 1200px;
-}
-
 h3 {
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
+}
+
+section {
+  padding-block: 94px;
 }
 
 header {
@@ -62,11 +73,9 @@ footer .logo-web {
   color: #000000;
 }
 
-.button-area-containter {
-  display: inline-block;
-}
-
 .button-area {
+  box-sizing: border-box;
+
   width: 1600px;
   height: 600px;
   left: 0px;
@@ -76,7 +85,6 @@ footer .logo-web {
 
 .effective {
   margin-inline: auto;
-  padding-top: 200px;
   font-weight: 900;
   font-size: 44px;
   line-height: 60px;
@@ -124,9 +132,12 @@ footer .logo-web {
 
 .lorem {
   list-style-type: none;
-  left: 215px;
-  top: 774px;
 }
+
+.lorem ul {
+  margin-left: 0px;
+}
+
 .lorem h3 {
   font-weight: 700;
   font-size: 14px;
@@ -137,7 +148,6 @@ footer .logo-web {
 }
 
 .lorem li {
-  margin-top: 94px;
   display: inline-block;
   width: 270px;
   font-size: 14px;
@@ -152,6 +162,10 @@ footer .logo-web {
 
 .lorem li:first-child {
   margin-left: 215px;
+}
+
+.what-we-doing {
+  padding-top: 0px;
 }
 
 .what-we-doing h2 {
@@ -176,6 +190,7 @@ footer .logo-web {
 }
 
 .team {
+  padding-top: 0px;
   background: #f5f4fa;
   width: 1600px;
   left: 0px;
@@ -268,11 +283,25 @@ footer p {
 }
 
 .portfolio table {
+  display: flex;
+  gap: 30px;
   margin-left: 215px;
   margin-bottom: 94px;
 }
 
+.portfolio-images {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.portfolio tbody {
+  flex-direction: column;
+  flex-basis: calc((100% - 20px) / 3);
+}
+
 .portfolio td {
+  margin-left: 30px;
   width: 370px;
   height: 404px;
   border: 1px solid #eeeeee;

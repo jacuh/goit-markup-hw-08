@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="css/normalizer.css" rel="stylesheet" />
     <link href="css/styles.css" rel="stylesheet" />
+    <link href="https://meyerweb.com/eric/tools/css/reset/" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,25 +14,27 @@
     />
     <title>homework3</title>
   </head>
-  <body>
-    <div class="container">
+  <div class="container">
+    <body>
       <header>
-        <a
-          class="logo-web"
-          href="https://www.edu.goit.global/pl/learn/12473958/5360994/5361000/homework"
-          >Web<span class="logo-studio">Studio</span></a
-        >
-        <nav>
-          <ul class="menu-nav">
-            <li><a href="index.html">Agencja</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="">Kontakt</a></li>
-          </ul>
-          <a class="email" href="mailto: info@devstudio.com"
-            >info@devstudio.com</a
+        <div class="header-containter">
+          <a
+            class="logo-web"
+            href="https://www.edu.goit.global/pl/learn/12473958/5360994/5361000/homework"
+            >Web<span class="logo-studio">Studio</span></a
           >
-          <a class="tel" href="tel: +48 111 111 111">+48 111 111 111</a>
-        </nav>
+          <nav>
+            <ul class="menu-nav">
+              <li><a href="index.html">Agencja</a></li>
+              <li><a href="portfolio.html">Portfolio</a></li>
+              <li><a href="">Kontakt</a></li>
+            </ul>
+            <a class="email" href="mailto: info@devstudio.com"
+              >info@devstudio.com</a
+            >
+            <a class="tel" href="tel: +48 111 111 111">+48 111 111 111</a>
+          </nav>
+        </div>
       </header>
       <main>
         <section class="button-area">
@@ -84,34 +86,37 @@
             </li>
           </ul>
         </section>
+
         <section class="team">
-          <h2>Nasz zespół</h2>
-          <ul>
-            <li>
-              <img src="images/image3.jpg" alt="handsome#1" width: 270px;
-              height: 260px; />
-              <h3>John Doe</h3>
-              <p>Product Designer</p>
-            </li>
-            <li>
-              <img src="images/image4.jpg" alt="pretty" width: 270px; height:
-              260px; />
-              <h3>John Doe</h3>
-              <p>Frontend Developer</p>
-            </li>
-            <li>
-              <img src="images/image5.jpg" alt="handsome#2" width: 270px;
-              height: 260px; />
-              <h3>John Doe</h3>
-              <p>Marketing</p>
-            </li>
-            <li>
-              <img src="images/image6.jpg" alt="handsome#3" width: 270px;
-              height: 260px; />
-              <h3>John Doe</h3>
-              <p>UI Designer</p>
-            </li>
-          </ul>
+          <div class="team-container">
+            <h2>Nasz zespół</h2>
+            <ul>
+              <li>
+                <img src="images/image3.jpg" alt="handsome#1" width: 270px;
+                height: 260px; />
+                <h3>John Doe</h3>
+                <p>Product Designer</p>
+              </li>
+              <li>
+                <img src="images/image4.jpg" alt="pretty" width: 270px; height:
+                260px; />
+                <h3>John Doe</h3>
+                <p>Frontend Developer</p>
+              </li>
+              <li>
+                <img src="images/image5.jpg" alt="handsome#2" width: 270px;
+                height: 260px; />
+                <h3>John Doe</h3>
+                <p>Marketing</p>
+              </li>
+              <li>
+                <img src="images/image6.jpg" alt="handsome#3" width: 270px;
+                height: 260px; />
+                <h3>John Doe</h3>
+                <p>UI Designer</p>
+              </li>
+            </ul>
+          </div>
         </section>
       </main>
       <footer>
@@ -126,6 +131,6 @@
           <a href="tel: +48 111 111 111">+48 111 111 111</a>
         </div>
       </footer>
-    </div>
-  </body>
+    </body>
+  </div>
 </html>
