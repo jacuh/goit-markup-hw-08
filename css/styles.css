@@ -5,12 +5,15 @@
 }
 
 .containter {
-  display: block;
-  width: 1200px;
+  box-sizing: content-box;
+  width: 1600px;
+  margin: auto;
 }
 
 .header-containter {
-  display: inline;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 body {
@@ -46,7 +49,6 @@ section {
 
 header {
   border: 1px solid #ececec;
-  width: 1600px;
 }
 
 header .logo-web {
@@ -84,7 +86,6 @@ footer .logo-web {
 }
 
 .button-area {
-  width: 1600px;
   height: 600px;
   left: 0px;
   top: 80px;
@@ -166,9 +167,6 @@ footer .logo-web {
   letter-spacing: 0.03em;
   color: #757575;
   text-align: left;
-}
-
-.lorem li {
   padding: 30px;
 }
 
@@ -177,7 +175,6 @@ footer .logo-web {
 }
 
 .wwd-container {
-  width: 1600px;
   text-align: center;
 }
 
@@ -209,7 +206,7 @@ footer .logo-web {
 .team {
   padding-top: 0px;
   background: #f5f4fa;
-  width: 1600px;
+
   left: 0px;
   top: 1449px;
 }
@@ -268,7 +265,6 @@ footer {
   box-sizing: border-box;
   padding-left: 215px;
   padding-block: 60px;
-  width: 1600px;
   left: 0px;
   top: 2097px;
   background: #2f303a;
@@ -290,7 +286,6 @@ footer p {
 }
 
 .portfolio {
-  width: 1170px;
   left: 215px;
   top: 179px;
 }
@@ -334,18 +329,6 @@ img {
   justify-content: center;
 }
 
-.portfolio tbody {
-  flex-direction: column;
-  flex-basis: calc((100% - 20px) / 3);
-}
-
-.portfolio td {
-  margin-left: 30px;
-  width: 370px;
-  height: 404px;
-  border: 1px solid #eeeeee;
-}
-
 .portfolio h3 {
   font-family: "Roboto";
   font-style: normal;
@@ -383,9 +366,6 @@ img {
   border-radius: 4px;
   border: none;
   padding: 4px;
-}
-
-.filters button:first-child {
 }
 
 .filters button:hover {
