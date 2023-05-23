@@ -8,12 +8,6 @@
   margin: auto;
 }
 
-.header-containter {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -45,12 +39,14 @@ section {
 }
 
 header {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: row;
   border: 1px solid #ececec;
 }
 
 header .logo-web {
-  margin-left: 215px;
-  margin-top: 24px;
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
@@ -77,20 +73,17 @@ footer .logo-web {
   color: #000000;
 }
 
-.b-a-container {
-  text-align: center;
-  padding-top: 200px;
-}
-
 .button-area {
   height: 600px;
   left: 0px;
   top: 80px;
   background: #2f303a;
   padding: 0;
+  text-align: center;
 }
 
 .effective {
+  padding-top: 200px;
   margin-block: 0px 40px;
   font-weight: 900;
   font-size: 44px;
@@ -118,8 +111,6 @@ footer .logo-web {
 }
 
 .menu-nav {
-  margin-left: 453px;
-  margin-top: 32px;
 }
 
 .menu-nav li {
@@ -133,11 +124,6 @@ footer .logo-web {
 
 .tel {
   color: #757575;
-}
-
-.lorem-container {
-  box-sizing: border-box;
-  text-align: center;
 }
 
 .lorem {
@@ -162,18 +148,17 @@ footer .logo-web {
   letter-spacing: 0.03em;
   color: #757575;
   text-align: left;
-  padding: 30px;
+  padding: 15px;
 }
 
 .lorem li:first-of-type {
   padding-left: 0px;
 }
 
-.wwd-container {
-  text-align: center;
-}
-
 .what-we-doing {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
   padding-block: 0px;
 }
 
@@ -194,14 +179,21 @@ footer .logo-web {
 }
 
 .what-we-doing li {
-  padding: 30px;
+  padding: 15px;
   display: inline;
+}
+
+.what-we-doing li:first-child {
+  padding-left: 0px;
+}
+
+.what-we-doing li:last-child {
+  padding-right: 0px;
 }
 
 .team {
   padding-top: 0px;
   background: #f5f4fa;
-
   left: 0px;
   top: 1449px;
 }
@@ -222,6 +214,11 @@ footer .logo-web {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   padding-bottom: 30px;
+  box-sizing: border-box;
+}
+
+.team li:first-child {
+  margin-left: 0px;
 }
 
 .team h3 {
@@ -253,9 +250,6 @@ footer .logo-web {
   padding-bottom: 30;
 }
 
-.footer-containter {
-}
-
 footer {
   box-sizing: border-box;
   padding-left: 215px;
@@ -280,11 +274,6 @@ footer p {
   color: #ffffff;
 }
 
-.portfolio-containter {
-  text-align: center;
-  box-sizing: border-box;
-}
-
 .portfolio-cards {
   display: flex;
   flex-wrap: wrap;
@@ -294,9 +283,9 @@ footer p {
 figure {
   display: flex;
   flex-direction: column;
-  flex-basis: calc((100% - 20px) / 3);
   margin: unset;
   border: 1px solid #eeeeee;
+  width: 370px;
 }
 
 img {
