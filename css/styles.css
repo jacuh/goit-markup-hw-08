@@ -1,12 +1,10 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
-.containter {
-  box-sizing: content-box;
-  width: 1600px;
+.container {
+  width: 1200px;
   margin: auto;
 }
 
@@ -44,7 +42,6 @@ h3 {
 
 section {
   padding-block: 94px;
-  width: 1600px;
 }
 
 header {
@@ -131,12 +128,10 @@ footer .logo-web {
 }
 
 .email {
-  margin-left: 1078px;
   color: #757575;
 }
 
 .tel {
-  margin-left: 50px;
   color: #757575;
 }
 
@@ -285,11 +280,6 @@ footer p {
   color: #ffffff;
 }
 
-.portfolio {
-  left: 215px;
-  top: 179px;
-}
-
 .portfolio-containter {
   text-align: center;
   box-sizing: border-box;
@@ -298,7 +288,6 @@ footer p {
 .portfolio-cards {
   display: flex;
   flex-wrap: wrap;
-  padding-left: 215px;
   gap: 10px;
 }
 
@@ -314,19 +303,6 @@ img {
   width: auto;
   max-width: 100%;
   height: auto;
-}
-
-.portfolio table {
-  display: flex;
-  gap: 30px;
-  margin-left: 215px;
-  margin-bottom: 94px;
-}
-
-.portfolio-images {
-  display: flex;
-  gap: 30px;
-  justify-content: center;
 }
 
 .portfolio h3 {
