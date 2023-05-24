@@ -64,11 +64,11 @@ header .logo-web {
   top: 24px;
 }
 
-footer .logo-studio {
+.footer-contact .logo-studio {
   color: white;
 }
 
-footer .logo-web {
+.footer-contact .logo-web {
   color: #2196f3;
   font-weight: 700;
   font-size: 26px;
@@ -301,7 +301,11 @@ footer {
   background: #2f303a;
 }
 
-footer a {
+.footer-content {
+  display: flex;
+}
+
+.footer-contact a {
   text-decoration: none;
   font-size: 14px;
   line-height: 24px;
@@ -309,12 +313,27 @@ footer a {
   color: rgba(255, 255, 255, 0.6);
 }
 
-footer p {
+.footer-contact p {
   padding-top: 20px;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
   color: #ffffff;
+}
+
+.join-us {
+  padding-left: 70px;
+}
+
+.join-us h3 {
+  color: #ffffff;
+  padding-bottom: 20px;
+}
+
+.join-us ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
 }
 
 .portfolio {
