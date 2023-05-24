@@ -54,6 +54,15 @@ header {
   align-items: center;
 }
 
+.header-contacts svg {
+  padding-left: 30px;
+  padding-right: 10px;
+}
+
+.header-contacts svg:first-child {
+  padding-left: 0;
+}
+
 header .logo-web {
   font-family: "Raleway";
   font-style: normal;
@@ -133,6 +142,9 @@ header .logo-web {
 
 .email {
   color: #757575;
+}
+
+.email svg {
 }
 
 .tel {
