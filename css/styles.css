@@ -54,13 +54,9 @@ header {
   align-items: center;
 }
 
-.header-contacts svg {
-  padding-left: 30px;
-  padding-right: 10px;
-}
-
-.header-contacts svg:first-child {
-  padding-left: 0;
+.header-left {
+  display: flex;
+  flex-direction: row;
 }
 
 header .logo-web {
@@ -133,6 +129,7 @@ header .logo-web {
 
 .menu-nav {
   display: inline;
+  margin-left: 93px;
 }
 
 .menu-nav li {
@@ -148,12 +145,28 @@ header .logo-web {
   margin-right: 0;
 }
 
+.email svg:hover {
+  color: #2196f3;
+}
+
 .email {
+  display: flex;
+  align-items: center;
   color: #757575;
 }
 
 .tel {
+  display: flex;
+  align-items: center;
   color: #757575;
+}
+
+.tel:hover svg {
+  fill: #2196f3;
+}
+
+.email:hover svg {
+  fill: #2196f3;
 }
 
 .lorem {
@@ -257,14 +270,23 @@ header .logo-web {
 .social-media {
   display: flex;
   justify-content: space-evenly;
-  padding-top: 16px;
+  padding-block: 16px 30px;
 }
 
-.social-icon:hover,
-.social-icon:focus {
+.social-icon:hover svg,
+.social-icon:focus svg {
   background-color: #2196f3;
   border-radius: 50px;
-  color: white;
+  fill: white;
+}
+
+.social-icon use:hover {
+  fill: white;
+}
+
+.social-icon a:hover,
+.social-icon a:focus {
+  fill: white;
 }
 
 .team h3 {
@@ -323,6 +345,10 @@ header .logo-web {
   color: #212121;
 }
 
+.clients li:hover svg {
+  fill: #2196f3;
+}
+
 footer {
   box-sizing: border-box;
   padding-left: 215px;
@@ -365,6 +391,19 @@ footer {
   flex-direction: row;
 }
 
+.join-us li {
+  padding-left: 10px;
+}
+
+.join-us li:first-child {
+  padding-left: 0px;
+}
+
+.join-us svg {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 80px;
+}
+
 .portfolio {
   display: flex;
   flex-wrap: wrap;
@@ -380,9 +419,16 @@ footer {
 .portfolio-cards figure {
   display: flex;
   flex-direction: column;
-
   border: 1px solid #eeeeee;
   width: 370px;
+}
+
+.portfolio-cards figure:hover {
+  box-shadow: 1px 4px 6px 0px #00000029;
+
+  box-shadow: 0px 4px 4px 0px #0000000f;
+
+  box-shadow: 0px 1px 1px 0px #0000001f;
 }
 
 .portfolio-cards figure:nth-child(-n + 6) {
