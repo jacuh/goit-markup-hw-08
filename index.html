@@ -12,7 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <title>homework4</title>
+    <title>homework5</title>
   </head>
   <body>
     <header>
@@ -72,9 +72,14 @@
             EFEKTYWNE ROZWIĄZANIA<br />
             DLA WASZEGO BIZNESU
           </h1>
-          <button class="button-order" type="button" src="modal.js">
+          <button class="button-order" type="button" data-modal-open>
             Zamów usługę
           </button>
+        </div>
+        <div class="modal is-hidden" data-modal>
+          <div class="modal-window">
+            <button type="button" data-modal-close>Close</button>
+          </div>
         </div>
       </section>
       <section>
@@ -148,14 +153,17 @@
               <img
               src="https://github.com/jacuh/goit-markup-hw-01/blob/main/images/image.jpg?raw=true"
               alt="purple pc" width: 370px; height: 294px; />
+              <p>APLIKACJE KOMPUTEROWE</p>
             </li>
             <li>
               <img src="images/image1.jpg" alt="smart pc" width: 370px; height:
               294px; />
+              <p>APLIKACJE MOBILNE</p>
             </li>
             <li>
               <img src="images/image2.jpg" alt="smart rainbow" width: 370px;
               height: 294px; />
+              <p>ROZWIĄZANIA GRAFICZNE</p>
             </li>
           </ul>
         </div>
@@ -175,7 +183,7 @@
                     width="44px"
                     ,
                     height="44px"
-                    viewBox="-13 -13 44 44"
+                    viewBox="-12 -12 44 44"
                     fill="#AFB1B8"
                   >
                     <use
@@ -209,7 +217,7 @@
                     width="44px"
                     ,
                     height="44px"
-                    viewBox="-13 -13 44 44"
+                    viewBox="-12 -12 44 44"
                     fill="#AFB1B8"
                   >
                     <use
@@ -226,7 +234,7 @@
                     width="44px"
                     ,
                     height="44px"
-                    viewBox="-13 -13 44 44"
+                    viewBox="-12 -11 44 44"
                     fill="#AFB1B8"
                   >
                     <use
@@ -251,7 +259,7 @@
                     width="44px"
                     ,
                     height="44px"
-                    viewBox="-13 -13 44 44"
+                    viewBox="-12 -12 44 44"
                     fill="#AFB1B8"
                   >
                     <use
@@ -285,7 +293,7 @@
                     width="44px"
                     ,
                     height="44px"
-                    viewBox="-13 -13 44 44"
+                    viewBox="-12 -12 44 44"
                     fill="#AFB1B8"
                   >
                     <use
@@ -302,7 +310,7 @@
                     width="44px"
                     ,
                     height="44px"
-                    viewBox="-13 -13 44 44"
+                    viewBox="-12 -11 44 44"
                     fill="#AFB1B8"
                   >
                     <use
@@ -327,7 +335,7 @@
                     width="44px"
                     ,
                     height="44px"
-                    viewBox="-13 -13 44 44"
+                    viewBox="-12 -12 44 44"
                     fill="#AFB1B8"
                   >
                     <use
@@ -361,7 +369,7 @@
                     width="44px"
                     ,
                     height="44px"
-                    viewBox="-13 -13 44 44"
+                    viewBox="-12 -12 44 44"
                     fill="#AFB1B8"
                   >
                     <use
@@ -378,7 +386,7 @@
                     width="44px"
                     ,
                     height="44px"
-                    viewBox="-13 -13 44 44"
+                    viewBox="-12 -11 44 44"
                     fill="#AFB1B8"
                   >
                     <use
@@ -403,7 +411,7 @@
                     width="44px"
                     ,
                     height="44px"
-                    viewBox="-13 -13 44 44"
+                    viewBox="-12 -12 44 44"
                     fill="#AFB1B8"
                   >
                     <use
@@ -437,7 +445,7 @@
                     width="44px"
                     ,
                     height="44px"
-                    viewBox="-13 -13 44 44"
+                    viewBox="-12 -12 44 44"
                     fill="#AFB1B8"
                   >
                     <use
@@ -454,7 +462,7 @@
                     width="44px"
                     ,
                     height="44px"
-                    viewBox="-13 -13 44 44"
+                    viewBox="-12 -11 44 44"
                     fill="#AFB1B8"
                   >
                     <use
@@ -550,11 +558,10 @@
           </div>
           <div class="join-us">
             <h3>DOŁĄCZ DO NAS</h3>
-            <ul>
+            <ul class="social-icon">
               <li>
                 <a>
                   <svg
-                    class="social-icon"
                     width="44"
                     height="44"
                     viewBox="-12 -12 44 44"
@@ -572,7 +579,6 @@
               <li>
                 <a>
                   <svg
-                    class="social-icon"
                     width="44"
                     height="44"
                     viewBox="-12 -12 44 44"
@@ -590,7 +596,6 @@
               <li>
                 <a>
                   <svg
-                    class="social-icon"
                     width="44"
                     height="44"
                     viewBox="-12 -12 44 44"
@@ -608,7 +613,6 @@
               <li>
                 <a>
                   <svg
-                    class="social-icon"
                     width="44"
                     height="44"
                     viewBox="-12 -12 44 44"

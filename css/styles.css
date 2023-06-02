@@ -28,6 +28,10 @@ a:visited {
   color: default;
 }
 
+svg {
+  cursor: pointer;
+}
+
 h3 {
   font-style: normal;
   font-weight: 700;
@@ -47,6 +51,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 16px;
 }
 
 .header-contacts {
@@ -57,6 +62,7 @@ header {
 .header-left {
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 
 header .logo-web {
@@ -84,6 +90,31 @@ header .logo-web {
 
 .logo-studio {
   color: #000000;
+}
+
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0px;
+  background: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 100%;
+}
+
+.modal-window {
+  background-color: #ffffff;
+  width: 521px;
+  height: 582px;
+}
+
+.is-hidden {
+  pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateX(-50%) translateY(-50%) scale(0) rotate(0deg)
+    skew(40deg, 40deg);
 }
 
 .button-area {
@@ -139,6 +170,10 @@ header .logo-web {
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
+}
+
+.menu-nav a::after {
+  color: red;
 }
 
 .menu-nav li:last-child {
@@ -227,7 +262,28 @@ header .logo-web {
 }
 
 .what-we-doing li {
+  position: relative;
   display: inline;
+  z-index: 1;
+}
+
+.what-we-doing p {
+  position: absolute;
+  bottom: 4px;
+  left: 0px;
+  width: 370px;
+  display: inline;
+  padding-block: 27px;
+  z-index: 2;
+  background: rgba(47, 48, 58, 0.8);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
 }
 
 .what-we-doing li:first-child {
@@ -273,8 +329,8 @@ header .logo-web {
   padding-block: 16px 30px;
 }
 
-.social-icon:hover svg,
-.social-icon:focus svg {
+.social-media a:hover svg,
+.social-media a:focus svg {
   background-color: #2196f3;
   border-radius: 50px;
   fill: white;
@@ -284,9 +340,9 @@ header .logo-web {
   fill: white;
 }
 
-.social-icon a:hover,
-.social-icon a:focus {
-  fill: white;
+.social-icon li:hover svg,
+.social-icon li:focus svg {
+  background-color: #2196f3;
 }
 
 .team h3 {
@@ -334,6 +390,7 @@ header .logo-web {
   border: 1px solid #afb1b8;
   padding-inline: 32px;
   padding-block: 14px;
+  cursor: pointer;
 }
 
 .clients h2 {
@@ -345,13 +402,18 @@ header .logo-web {
   color: #212121;
 }
 
-.clients li:hover svg {
+.clients li:hover svg,
+.clients li:focus svg {
   fill: #2196f3;
+}
+
+.clients li:hover,
+.clients li:focus {
+  border-color: #2196f3;
 }
 
 footer {
   box-sizing: border-box;
-  padding-left: 215px;
   padding-block: 60px;
   background: #2f303a;
 }
@@ -413,7 +475,28 @@ footer {
 .portfolio-cards {
   display: flex;
   flex-wrap: wrap;
+  position: relative;
   justify-content: space-between;
+}
+
+.slider {
+  position: absolute;
+  width: 372px;
+  left: 0px;
+  top: 293px;
+  height: 294px;
+  pointer-events: none;
+  visibility: hidden;
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-cards figure:hover .slider {
+  transform: translatey(-100%);
+  background: rgba(33, 150, 243, 0.9);
+  opacity: 2;
+  visibility: visible;
 }
 
 .portfolio-cards figure {
@@ -421,6 +504,13 @@ footer {
   flex-direction: column;
   border: 1px solid #eeeeee;
   width: 370px;
+  cursor: pointer;
+}
+
+.slider p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .portfolio-cards figure:hover {
