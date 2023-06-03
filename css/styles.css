@@ -172,10 +172,6 @@ header .logo-web {
   letter-spacing: 0.02em;
 }
 
-.menu-nav a::after {
-  color: red;
-}
-
 .menu-nav li:last-child {
   margin-right: 0;
 }
@@ -466,6 +462,15 @@ footer {
   border-radius: 80px;
 }
 
+.portfolio * p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
 .portfolio {
   display: flex;
   flex-wrap: wrap;
@@ -480,6 +485,9 @@ footer {
 }
 
 .slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   width: 372px;
   left: 0px;
@@ -490,6 +498,16 @@ footer {
   transition-property: transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.slider > p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  padding-left: 24px;
 }
 
 .portfolio-cards figure:hover .slider {
@@ -505,12 +523,6 @@ footer {
   border: 1px solid #eeeeee;
   width: 370px;
   cursor: pointer;
-}
-
-.slider p {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .portfolio-cards figure:hover {
@@ -544,15 +556,6 @@ img {
   line-height: 36px;
   letter-spacing: 0.06em;
   color: #212121;
-}
-
-.portfolio p {
-  font-family: "Roboto";
-  font-style: normal;
-  font-size: 16px;
-  line-height: 30px;
-  letter-spacing: 0.03em;
-  color: #757575;
 }
 
 .filters {
