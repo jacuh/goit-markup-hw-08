@@ -165,11 +165,22 @@ header .logo-web {
 
 .menu-nav li {
   margin-right: 46px;
+  position: relative;
   display: inline;
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
+}
+
+.menu-active::after {
+  content: "";
+  position: absolute;
+  background: #2196f3;
+  height: 4px;
+  left: 0;
+  right: 0;
+  bottom: -28px;
 }
 
 .menu-nav li:last-child {
