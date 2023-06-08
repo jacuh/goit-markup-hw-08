@@ -21,14 +21,6 @@ a {
   color: #212121;
 }
 
-a:hover,
-a:focus {
-  color: #2196f3;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 a:visited {
   color: default;
 }
@@ -250,6 +242,22 @@ header .logo-web {
   letter-spacing: 0.02em;
 }
 
+.menu-nav a:hover,
+.menu-nav a:focus {
+  color: #2196f3;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-contacts a:hover,
+.header-contacts a:focus {
+  color: #2196f3;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .menu-active::after {
   content: "";
   position: absolute;
@@ -414,20 +422,26 @@ header .logo-web {
   background-color: #2196f3;
   border-radius: 50px;
   fill: white;
+  color: #2196f3;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-icon use:hover {
+.social-icon * a:hover {
   fill: white;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-icon li:hover svg,
 .social-icon li:focus svg {
   background-color: #2196f3;
-  transition-property: color, scale;
-  transition-duration: 250ms, 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
-    cubic-bezier(0.4, 0, 0.2, 1);
-  scale: 2;
+  color: #2196f3;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team h3 {
@@ -611,7 +625,7 @@ footer {
   font-size: 16px;
   line-height: 30px;
   letter-spacing: 0.06em;
-
+  cursor: pointer;
   color: #ffffff;
 }
 
@@ -650,7 +664,7 @@ footer {
   transition-duration: 250ms, 250ms, 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
     cubic-bezier(0.4, 0, 0.2, 1) cubic-bezier(0.4, 0, 0.2, 1);
-  z-index: 0;
+  z-index: 4;
 }
 
 .slider > p {
@@ -672,10 +686,13 @@ footer {
 
 .portfolio-cards figure {
   display: flex;
+  position: relative;
   flex-direction: column;
   border: 1px solid #eeeeee;
   width: 370px;
   cursor: pointer;
+  overflow: hidden;
+  z-index: 11;
 }
 
 .portfolio-cards figure:hover {
@@ -691,9 +708,11 @@ footer {
 }
 
 .portfolio-labels {
+  position: relative;
   padding-block: 20px;
   padding-left: 24px;
-  z-index: 2;
+  background: #fff;
+  z-index: 10;
 }
 
 .portfolio-cards img {
