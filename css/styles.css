@@ -89,6 +89,13 @@ header .logo-web {
   color: #000000;
 }
 
+.modal-container {
+  display: flex;
+  justify-content: center;
+  width: 521px;
+  box-sizing: border-box;
+}
+
 .modal {
   display: flex;
   justify-content: center;
@@ -133,25 +140,63 @@ header .logo-web {
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 40px;
 }
 
 .modal-form .checkbox {
   display: flex;
+  flex-direction: row;
   align-items: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #757575;
 }
 
 .modal-form label {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: #757575;
 }
 
-.modal-form input {
+.label-frame {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   height: 50px;
   width: 448px;
+  margin-block: 4px 10px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+}
+
+.textarea-frame textarea {
+  width: 448px;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  margin-block: 4px 20px;
+}
+
+.label-frame input {
+  height: 50px;
+  width: 448px;
+  border: 0;
+}
+
+.modal-form input:focus {
+  outline: 0;
+}
+
+.modal-form svg {
+  z-index: 1;
 }
 
 .modal-form h2 {
@@ -178,6 +223,7 @@ header .logo-web {
   border-color: #2196f3;
   color: #ffffff;
   cursor: pointer;
+  margin-block: 30px 40px;
 }
 
 .is-hidden {
