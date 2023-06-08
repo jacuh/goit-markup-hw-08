@@ -234,6 +234,36 @@ header .logo-web {
   outline: none;
 }
 
+.checkbox > input {
+  display: none;
+}
+
+.checkbox > input + *::before {
+  content: "";
+  display: inline-block;
+  vertical-align: bottom;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 10%;
+  border-style: solid;
+  border-width: 0.1rem;
+  border-color: var(--main-grey);
+  margin-right: 7px;
+  margin-bottom: 3px;
+}
+
+.checkbox > input:checked + *::before {
+  content: "✓";
+  color: white;
+  text-align: center;
+  background: var(--main-blue-color);
+  border-color: var(--main-blue-color);
+}
+
+.checkbox > input:checked + * {
+  color: var(--main-blue-color);
+}
+
 .modal-form label {
   display: flex;
   flex-direction: column;
@@ -295,6 +325,10 @@ header .logo-web {
   height: 50px;
   width: 448px;
   border: 0;
+}
+
+.label-frame input:focus .label-frame {
+  border: 1px solid var(--main-blue-color);
 }
 
 .modal-form input:focus {
@@ -605,7 +639,7 @@ footer {
 
 .footer-content {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
 }
 
 .footer-contact a {

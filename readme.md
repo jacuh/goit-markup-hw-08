@@ -1,1 +1,1 @@
-https://jacuh.github.io/goit-markup-hw-05/
+https://jacuh.github.io/goit-markup-hw-06/
