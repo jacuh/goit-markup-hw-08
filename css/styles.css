@@ -233,6 +233,7 @@ header .logo-web {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding-left: 44px;
+  margin-block: 4px 10px;
 }
 
 .modal-form label {
@@ -243,18 +244,20 @@ header .logo-web {
 
 .modal-form svg {
   position: absolute;
-  margin-top: 17px;
+  margin-top: 21px;
 }
 
 .modal-form input:hover,
 .modal-form input:focus-within {
   border: 1px solid var(--main-blue-color);
   outline: none;
+  transition: var(--main-transition);
 }
 
-.modal-form input:hover svg,
-.modal-form input:focus-within svg {
+.modal-form input:hover + svg,
+.modal-form input:focus-within + svg {
   fill: var(--main-blue-color);
+  transition: var(--main-transition), var(--transition-fill);
 }
 
 .modal-form textarea {
@@ -263,7 +266,22 @@ header .logo-web {
   border-radius: 4px;
   width: 448px;
   height: 120px;
-  padding: 9px;
+  padding-inline: 16px;
+  padding-block: 12px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  margin-block: 4px 20px;
+}
+
+.modal-form textarea:hover,
+.modal-form textarea:focus {
+  outline: none;
+  border: 1px solid var(--main-blue-color);
+  transition: var(--main-transition);
 }
 
 .modal-form .checkbox {
