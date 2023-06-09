@@ -241,20 +241,20 @@ header .logo-web {
   flex-direction: column;
 }
 
-.modal-form input:hover svg,
-.modal-form input:focus-within svg {
-  fill: var(--main-blue-color);
-}
-
 .modal-form svg {
   position: absolute;
   margin-top: 17px;
 }
 
-.modal-form input:hover svg,
-.modal-form input:focus-within svg {
+.modal-form input:hover,
+.modal-form input:focus-within {
   border: 1px solid var(--main-blue-color);
   outline: none;
+}
+
+.modal-form input:hover svg,
+.modal-form input:focus-within svg {
+  fill: var(--main-blue-color);
 }
 
 .modal-form textarea {
