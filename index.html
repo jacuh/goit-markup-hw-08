@@ -6,35 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://meyerweb.com/eric/tools/css/reset/" rel="stylesheet" />
     <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/main.min.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <title>homework6</title>
+    <title>homework7</title>
   </head>
   <body>
     <header>
       <div class="container">
         <div class="header-childs">
-          <div class="header-left">
-            <a class="logo-web" href=""
-              >Web<span class="logo-studio">Studio</span></a
+          <div class="left">
+            <a class="left__logo-web" href=""
+              >Web<span class="left__logo-web--studio">Studio</span></a
             >
             <nav>
-              <ul class="menu-nav">
-                <li class="menu-active">
-                  <a href="index.html">Agencja</a>
+              <ul class="left__main-nav">
+                <li
+                  class="left__main-nav__item left__main-nav__item--home left__main-nav__item--active"
+                >
+                  <a class="left__main-nav__item--link" href="index.html"
+                    >Agencja</a
+                  >
                 </li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="">Kontakt</a></li>
+                <li
+                  class="left__main-nav__item left__main-nav__item--portfolio"
+                >
+                  <a class="left__main-nav__item--link" href="portfolio.html"
+                    >Portfolio</a
+                  >
+                </li>
+                <li class="left__main-nav__item left__main-nav__item--contact">
+                  <a class="left__main-nav__item--link" href="">Kontakt</a>
+                </li>
               </ul>
             </nav>
           </div>
           <div class="header-contacts">
-            <a class="email" href="mailto: info@devstudio.com">
+            <a class="header-contacts__link" href="mailto: info@devstudio.com">
               <svg
+                class="header-contacts__link--icon"
                 height="44px"
                 ,
                 width="44px"
@@ -47,8 +61,9 @@
               </svg>
               info@devstudio.com</a
             >
-            <a class="tel" href="tel: +48 111 111 111"
+            <a class="header-contacts__link" href="tel: +48 111 111 111"
               ><svg
+                class="header-contacts__link--icon"
                 height="44px"
                 ,
                 width="44px"
