@@ -22,41 +22,10 @@
       color: #000000;
     }
   }
-
-  &__main-nav {
-    display: inline;
-    margin-left: 93px;
-    &__item {
-      margin-right: 46px;
-      position: relative;
-      display: inline;
-      font-weight: 500;
-      font-size: 14px;
-      line-height: 16px;
-      letter-spacing: 0.02em;
-      &--link {
-        color: var(--main-black);
-        text-decoration: none;
-        transition: var(--main-transition);
-        &:hover,
-        &:focus {
-          color: var(--main-blue-color);
-        }
-      }
-      &--contact {
-        margin: 0;
-      }
-      &--active::after {
-        content: "";
-        position: absolute;
-        background: var(--main-blue-color);
-        height: 4px;
-        left: 0;
-        right: 0;
-        bottom: -28px;
-      }
-    }
-  }
+}
+.main-nav {
+  display: inline;
+  margin-left: 93px;
 }
 
 .header-contacts {
