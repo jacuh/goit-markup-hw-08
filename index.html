@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://meyerweb.com/eric/tools/css/reset/" rel="stylesheet" />
-    <link href="css/styles.css" rel="stylesheet" />
+
     <link href="css/main.min.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,87 +16,98 @@
     <title>homework7</title>
   </head>
   <body>
-    <header>
-      <div class="container">
-        <div class="header-childs">
-          <div class="left">
-            <a class="left__logo-web" href=""
-              >Web<span class="left__logo-web--studio">Studio</span></a
-            >
-            <nav>
-              <ul class="main-nav">
-                <li
-                  class="main-nav__item main-nav__item--home main-nav__item--active"
-                >
-                  <a class="main-nav__link" href="index.html">Agencja</a>
-                </li>
-                <li class="main-nav__item main-nav__item--portfolio">
-                  <a class="main-nav__link" href="portfolio.html">Portfolio</a>
-                </li>
-                <li class="main-nav__item main-nav__item--contact">
-                  <a class="main-nav__link" href="">Kontakt</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-          <div class="header-contacts">
-            <a class="header-contacts__link" href="mailto: info@devstudio.com">
-              <svg
-                class="header-contacts__link--icon"
-                height="44px"
-                ,
-                width="44px"
-                viewBox="0 0 9 24"
-                fill="#AFB1B8"
+    <header class="header">
+      <div class="header__childs container">
+        <div class="left">
+          <a class="left__logo-web" href=""
+            >Web<span class="left__logo-web--studio">Studio</span></a
+          >
+          <nav>
+            <ul class="main-nav">
+              <li
+                class="main-nav__item main-nav__item--home main-nav__item--active"
               >
-                <use
-                  href="../goit-markup-hw-04/images/icons.svg#icon-envelope"
-                ></use>
-              </svg>
-              info@devstudio.com</a
+                <a class="main-nav__link" href="index.html">Agencja</a>
+              </li>
+              <li class="main-nav__item main-nav__item--portfolio">
+                <a class="main-nav__link" href="portfolio.html">Portfolio</a>
+              </li>
+              <li class="main-nav__item main-nav__item--contact">
+                <a class="main-nav__link" href="">Kontakt</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header-contacts">
+          <a class="header-contacts__link" href="mailto: info@devstudio.com">
+            <svg
+              class="header-contacts__link__icon"
+              height="44px"
+              ,
+              width="44px"
+              viewBox="0 0 9 24"
+              fill="#AFB1B8"
             >
-            <a class="header-contacts__link" href="tel: +48 111 111 111"
-              ><svg
-                class="header-contacts__link--icon"
-                height="44px"
-                ,
-                width="44px"
-                viewBox="0 0 10 26"
-                fill="#AFB1B8"
-              >
-                <use
-                  href="../goit-markup-hw-04/images/icons.svg#icon-mobile"
-                ></use>
-              </svg>
-              +48 111 111 111</a
+              <use
+                href="../goit-markup-hw-04/images/icons.svg#icon-envelope"
+              ></use>
+            </svg>
+            info@devstudio.com</a
+          >
+          <a class="header-contacts__link" href="tel: +48 111 111 111"
+            ><svg
+              class="header-contacts__link__icon"
+              height="44px"
+              ,
+              width="44px"
+              viewBox="0 0 10 26"
+              fill="#AFB1B8"
             >
-          </div>
+              <use
+                href="../goit-markup-hw-04/images/icons.svg#icon-mobile"
+              ></use>
+            </svg>
+            +48 111 111 111</a
+          >
         </div>
       </div>
     </header>
     <main>
       <section class="button-area">
         <div class="container">
-          <h1 class="effective">
+          <h1 class="button-area__heading">
             EFEKTYWNE ROZWIĄZANIA<br />
             DLA WASZEGO BIZNESU
           </h1>
-          <button class="button-order" type="button" data-modal-open>
+          <button class="button-area__button" type="button" data-modal-open>
             Zamów usługę
           </button>
         </div>
         <div class="modal is-hidden" data-modal>
-          <div class="modal-window">
+          <div class="modal__window">
             <div class="close-button">
-              <button type="button" data-modal-close>X</button>
+              <button
+                class="close-button__button"
+                type="button"
+                data-modal-close
+              >
+                X
+              </button>
             </div>
-            <div class="modal-container">
+            <div class="modal-content">
               <form class="modal-form">
-                <h2>Zostaw swoje dane w formularzu poniżej</h2>
-                <label class="modal-label" for="main-modal">
+                <h2 class="modal-form__heading">
+                  Zostaw swoje dane w formularzu poniżej
+                </h2>
+                <label class="modal-form__label modal-label" for="main-modal">
                   Imię
                   <input type="text" name="name" required />
-                  <svg width="44" height="44" viewBox="-12 -12 44 44">
+                  <svg
+                    class="modal-label__icon"
+                    width="44"
+                    height="44"
+                    viewBox="-12 -12 44 44"
+                  >
                     <use
                       href="../goit-markup-hw-05/images/icons.svg#icon-person-black"
                       ,
@@ -105,10 +116,11 @@
                     ></use>
                   </svg>
                 </label>
-                <label for="main-modal">
+                <label class="modal-form__label modal-label" for="main-modal">
                   Telefon
                   <input type="tel" name="tel" required />
                   <svg
+                    class="modal-label__icon"
                     width="44"
                     height="44"
                     viewBox="-12 -12 44 44"
@@ -122,10 +134,11 @@
                     ></use>
                   </svg>
                 </label>
-                <label for="mian-modal">
+                <label class="modal-form__label modal-label" for="mian-modal">
                   E-mail
                   <input type="email" name="e-mial" required />
                   <svg
+                    class="modal-label__icon"
                     width="44"
                     height="44"
                     viewBox="-12 -12 44 44"
@@ -139,9 +152,12 @@
                     ></use>
                   </svg>
                 </label>
-                <label for="main-modal">
+                <label class="modal-form__label modal-label" for="main-modal">
                   Komentarz
-                  <textarea placeholder="Wprowadź tekst"></textarea>
+                  <textarea
+                    class="modal-label__textarea"
+                    placeholder="Wprowadź tekst"
+                  ></textarea>
                 </label>
                 <label class="checkbox">
                   <input type="checkbox" name="reguls" value="yes" required />

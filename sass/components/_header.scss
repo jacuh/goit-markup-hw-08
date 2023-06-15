@@ -1,8 +1,14 @@
-.header-childs {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 16px;
+.header {
+  border: 1px solid #ececec;
+  padding-block: 32px;
+  &__container {
+  }
+  &__childs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 16px;
+  }
 }
 
 .left {
@@ -26,6 +32,36 @@
 .main-nav {
   display: inline;
   margin-left: 93px;
+  &__link {
+    color: var(--main-black);
+    text-decoration: none;
+    transition: var(--main-transition);
+    &:hover,
+    &:focus {
+      color: var(--main-blue-color);
+    }
+  }
+  &__item {
+    margin-right: 46px;
+    position: relative;
+    display: inline;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    &--contact {
+      margin: 0;
+    }
+    &--active::after {
+      content: "";
+      position: absolute;
+      background: var(--main-blue-color);
+      height: 4px;
+      left: 0;
+      right: 0;
+      bottom: -28px;
+    }
+  }
 }
 
 .header-contacts {
@@ -41,7 +77,7 @@
     &:focus {
       color: var(--main-blue-color);
     }
-    &--icon {
+    &__icon {
       fill: var(--main-grey);
       transition: var(--transition-fill);
       &:hover,

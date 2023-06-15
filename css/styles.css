@@ -36,126 +36,11 @@ section {
   padding-block: 94px;
 }
 
-header {
-  border: 1px solid #ececec;
-  padding-block: 32px;
-}
-
-.header-left {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-header .logo-web {
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  color: var(--main-blue-color);
-  left: 215px;
-  top: 24px;
-}
-
-.logo-studio {
-  color: #000000;
-}
-
-.footer-contact .logo-studio {
-  color: white;
-}
-
-.footer-contact .logo-web {
-  color: var(--main-blue-color);
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 31px;
-  letter-spacing: 0.03em;
-  font-family: "Raleway";
-}
-
-.menu-nav {
-  display: inline;
-  margin-left: 93px;
-}
-
-.menu-nav li {
-  margin-right: 46px;
-  position: relative;
-  display: inline;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
-}
-
-.menu-nav a {
-  color: var(--main-black);
-}
-
-.menu-nav a:hover,
-.menu-nav a:focus {
-  color: var(--main-blue-color);
-  transition: var(--main-transition);
-}
-
-.menu-active::after {
-  content: "";
-  position: absolute;
-  background: var(--main-blue-color);
-  height: 4px;
-  left: 0;
-  right: 0;
-  bottom: -28px;
-}
-
-.menu-nav li:last-child {
-  margin-right: 0;
-}
-
-.email {
-  display: flex;
-  align-items: center;
-  color: var(--main-grey);
-  text-decoration: none;
-}
-
-.tel {
-  display: flex;
-  align-items: center;
-  color: var(--main-grey);
-  text-decoration: none;
-}
-
-.tel:hover svg {
-  fill: var(--main-blue-color);
-}
-
-.email:hover svg {
-  fill: var(--main-blue-color);
-}
-
 .modal-container {
   display: flex;
   justify-content: center;
   width: 521px;
   box-sizing: border-box;
-}
-
-.modal {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 0px;
-  background: rgba(0, 0, 0, 0.2);
-  width: 100%;
-  height: 100%;
-  opacity: 1;
-  transition-property: transform, visibility, opacity;
-  transition-duration: 250ms, 250ms, 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
-    cubic-bezier(0.4, 0, 0.2, 1) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-window {
@@ -254,13 +139,6 @@ header .logo-web {
   line-height: 14px;
   letter-spacing: 0.01em;
   margin-block: 4px 20px;
-}
-
-.modal-form textarea:hover,
-.modal-form textarea:focus {
-  outline: none;
-  border: 1px solid var(--main-blue-color);
-  transition: var(--main-transition);
 }
 
 .modal-form .checkbox {
@@ -594,6 +472,19 @@ footer {
   box-sizing: border-box;
   padding-block: 60px;
   background: #2f303a;
+}
+
+.footer-contact .logo-studio {
+  color: white;
+}
+
+.footer-contact .logo-web {
+  color: var(--main-blue-color);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  font-family: "Raleway";
 }
 
 .footer-content {
