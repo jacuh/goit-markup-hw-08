@@ -91,7 +91,12 @@
     padding-left: 44px;
     margin-block: 4px 10px;
     transition: $transition-brdr;
-    &:hover {
+    &:hover + .modal-label__icon,
+    &:focus + .modal-label__icon {
+      fill: $main-blue-color;
+    }
+    &:hover,
+    &:focus {
       border: 1px solid $main-blue-color;
       outline: none;
     }
@@ -99,6 +104,7 @@
   &__icon {
     position: absolute;
     margin-top: 21px;
+    transition: $transition-fill, $main-transition;
   }
   &__textarea {
     box-sizing: border-box;

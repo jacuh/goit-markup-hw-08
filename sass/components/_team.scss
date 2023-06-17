@@ -56,11 +56,14 @@
   padding-block: 16px 30px;
 }
 
-.social-link__icon:hover,
-.social-link__icon:focus {
-  transition: $main-transition, $transition-bg;
-  background-color: $main-blue-color;
+.social-link__icon {
   border-radius: 50px;
-  fill: white;
-  color: $main-blue-color;
+  transition: $main-transition, $transition-bg;
+  &:hover,
+  &:focus {
+    background-color: $main-blue-color;
+
+    fill: white;
+    color: $main-blue-color;
+  }
 }

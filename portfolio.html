@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://meyerweb.com/eric/tools/css/reset/" rel="stylesheet" />
-    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/main.min.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,53 +15,64 @@
     <title>homework7</title>
   </head>
   <body>
-    <header>
-      <div class="container">
-        <div class="header-childs">
-          <div class="header-left">
-            <a
-              class="logo-web"
-              href="https://www.edu.goit.global/pl/learn/12473958/5360994/5361000/homework"
-              >Web<span class="logo-studio">Studio</span></a
-            >
-            <nav>
-              <ul class="menu-nav">
-                <li><a href="index.html">Agencja</a></li>
-                <li class="menu-active"><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="">Kontakt</a></li>
-              </ul>
-            </nav>
-          </div>
-          <div class="header-contacts">
-            <a class="email" href="mailto: info@devstudio.com">
-              <svg
-                height="44px"
-                ,
-                width="44px"
-                viewBox="0 0 9 24"
-                fill="#AFB1B8"
+    <header class="header">
+      <div class="header__childs container">
+        <div class="left">
+          <a class="left__logo-web" href=""
+            >Web<span class="left__logo-web--studio">Studio</span></a
+          >
+          <nav>
+            <ul class="main-nav">
+              <li
+                class="main-nav__item main-nav__item--home"
               >
-                <use
-                  href="../goit-markup-hw-04/images/icons.svg#icon-envelope"
-                ></use>
-              </svg>
-              info@devstudio.com</a
+                <a class="main-nav__link" href="index.html">Agencja</a>
+              </li>
+              <li class="main-nav__item main-nav__item--portfolio main-nav__item--active">
+                <a class="main-nav__link" href="portfolio.html">Portfolio</a>
+              </li>
+              <li class="main-nav__item main-nav__item--contact">
+                <a class="main-nav__link" href="">Kontakt</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header-contacts">
+          <a
+            class="header-contacts__link header-icon"
+            href="mailto: info@devstudio.com"
+          >
+            <svg
+              class="header-icon__icon"
+              height="44px"
+              ,
+              width="44px"
+              viewBox="0 0 9 24"
+              fill="#AFB1B8"
             >
-            <a class="tel" href="tel: +48 111 111 111"
-              ><svg
-                height="44px"
-                ,
-                width="44px"
-                viewBox="0 0 10 26"
-                fill="#AFB1B8"
-              >
-                <use
-                  href="../goit-markup-hw-04/images/icons.svg#icon-mobile"
-                ></use>
-              </svg>
-              +48 111 111 111</a
+              <use
+                href="../goit-markup-hw-04/images/icons.svg#icon-envelope"
+              ></use>
+            </svg>
+            info@devstudio.com</a
+          >
+          <a
+            class="header-contacts__link header-icon"
+            href="tel: +48 111 111 111"
+            ><svg
+              class="header-icon__icon"
+              height="44px"
+              ,
+              width="44px"
+              viewBox="0 0 10 26"
+              fill="#AFB1B8"
             >
-          </div>
+              <use
+                href="../goit-markup-hw-04/images/icons.svg#icon-mobile"
+              ></use>
+            </svg>
+            +48 111 111 111</a
+          >
         </div>
       </div>
     </header>
@@ -69,128 +80,128 @@
       <section>
         <div class="container">
           <div class="portfolio">
-            <div class="filters">
+            <div class="portfolio__filters">
               <button type="button">Wszystkie</button>
               <button type="button">Strony</button>
               <button type="button">Aplikacje</button>
               <button type="button">Dizajn</button>
               <button type="button">Marketing</button>
             </div>
-          <div class="portfolio-cards">
-            <figure>
+          <div class="portfolio__gallery portfolio-gallery">
+            <figure class="portfolio-gallery__card">
               <img src="images/hw2.jpg" alt="purple pc" width: 370px; height:
               294px; />
               <figcaption>
                 <div class="slider">
-                  <p>Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji</p>
+                  <p class="slider__text">Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji</p>
                 </div>
                 <div class="portfolio-labels">
-                <h3>Technocrack</h3>
-                <p>Strona internetowa</p>
+                <h3 class="portfolio-labels__heading">Technocrack</h3>
+                <p class="portfolio-labels__text">Strona internetowa</p>
               </div>
               </figcaption>
             </figure>
-            <figure>
+            <figure class="portfolio-gallery__card">
               <img src="images/hw2 (1).jpg" alt="purple pc" width: 370px;
               height: 294px; />
               <figcaption>
                 <div class="slider">
-                  <p>Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji</p>
+                  <p class="slider__text">Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji</p>
                 </div>
                 <div class="portfolio-labels">
-                <h3>Grafika New Orlean vs Golden Star</h3>
-                <p>Dizajn</p>
+                <h3 class="portfolio-labels__heading">Grafika New Orlean vs Golden Star</h3>
+                <p class="portfolio-labels__text">Dizajn</p>
                 </div>
               </figcaption>
             </figure>
-            <figure>
+            <figure class="portfolio-gallery__card">
               <img src="images/hw2 (2).jpg" alt="purple pc" width: 370px;
               height: 294px; />
               <figcaption>
                 <div class="slider">
-                  <p>Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji</p>
+                  <p class="slider__text">Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji</p>
                 </div>
                 <div class="portfolio-labels">
-                <h3>Restauracja Seafood</h3>
-                <p>Aplikacja</p>
+                <h3 class="portfolio-labels__heading">Restauracja Seafood</h3>
+                <p class="portfolio-labels__text">Aplikacja</p>
               </div>
               </figcaption>
             </figure>
-            <figure>
+            <figure class="portfolio-gallery__card">
               <img src="images/hw2 (3).jpg" alt="purple pc" width: 370px;
               height: 294px; />
               <figcaption>
                 <div class="slider">
-                  <p>Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji</p>
+                  <p class="slider__text">Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji</p>
                 </div>
                 <div class="portfolio-labels">
-                <h3>Projekt Prime</h3>
-                <p>Marketing</p>
+                <h3 class="portfolio-labels__heading">Projekt Prime</h3>
+                <p class="portfolio-labels__text">Marketing</p>
               </div>
               </figcaption>
             </figure>
-            <figure>
+            <figure class="portfolio-gallery__card">
               <img src="images/hw2 (4).jpg" alt="purple pc" width: 370px;
               height: 294px; />
               <figcaption>
                 <div class="slider">
-                  <p>Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji</p>
+                  <p class="slider__text">Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji</p>
                 </div>
                 <div class="portfolio-labels">
-                <h3>Projekt Boxes</h3>
-                <p>Aplikacja</p>
+                <h3 class="portfolio-labels__heading">Projekt Boxes</h3>
+                <p class="portfolio-labels__text">Aplikacja</p>
               </div>
               </figcaption>
             </figure>
-            <figure>
+            <figure class="portfolio-gallery__card">
               <img src="images/hw2 (5).jpg" alt="purple pc" width: 370px;
               height: 294px; />
               <figcaption>
                 <div class="slider">
-                  <p>Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji</p>
+                  <p class="slider__text">Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji</p>
                 </div>
                 <div class="portfolio-labels">
-                <h3>Inspiration has no Borders</h3>
-                <p>Strona internetowa</p>
+                <h3 class="portfolio-labels__heading">Inspiration has no Borders</h3>
+                <p class="portfolio-labels__text">Strona internetowa</p>
               </div>
               </figcaption>
             </figure>
-            <figure>
+            <figure class="portfolio-gallery__card">
               <img src="images/hw2 (6).jpg" alt="purple pc" width: 370px;
               height: 294px; />
               <figcaption>
                 <div class="slider">
-                  <p>Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji</p>
+                  <p class="slider__text">Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji</p>
                 </div>
                 <div class="portfolio-labels">
-                <h3>Magazyn Limited Edition</h3>
-                <p>Dizajn</p>
+                <h3 class="portfolio-labels__heading">Magazyn Limited Edition</h3>
+                <p class="portfolio-labels__text">Dizajn</p>
               </div>
               </figcaption>
             </figure>
-            <figure>
+            <figure class="portfolio-gallery__card">
               <img src="images/hw2 (7).jpg" alt="purple pc" width: 370px;
               height: 294px; />
               <figcaption>
                 <div class="slider">
-                  <p>Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji</p>
+                  <p class="slider__text">Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji</p>
                 </div>
                 <div class="portfolio-labels">
-                <h3>Projekt LAB</h3>
-                <p>Marketing</p>
+                <h3 class="portfolio-labels__heading">Projekt LAB</h3>
+                <p class="portfolio-labels__text">Marketing</p>
               </div>
               </figcaption>
             </figure>
-            <figure>
+            <figure class="portfolio-gallery__card">
               <img src="images/hw2 (8).jpg" alt="purple pc" width: 370px;
               height: 294px; />
               <figcaption>
                 <div class="slider">
-                  <p>Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji</p>
+                  <p class="slider__text">Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji</p>
                 </div>
                 <div class="portfolio-labels">
-                <h3>Growing Business</h3>
-                <p>Aplikacja</p>
+                <h3 class="portfolio-labels__heading">Growing Business</h3>
+                <p class="portfolio-labels__text">Aplikacja</p>
               </div>
               </figcaption>
             </figure>
@@ -200,113 +211,130 @@
     </main>
     <footer>
       <div class="container">
-        <div class="footer-content">
-          <div class="footer-contact">
+        <div class="footer">
+          <div class="footer__contact footer-contact">
             <a
-              class="logo-web"
+              class="footer-contact__logo footer-logo"
               href="https://www.edu.goit.global/pl/learn/12473958/5360994/5361000/homework"
-              >Web<span class="logo-studio">Studio</span></a
+              >Web<span class="footer-logo__studio">Studio</span></a
             >
-            <p>m. Warszawa, Aleje Jerozolimskie 21</p>
-            <a href="mailto: info@example.com">info@example.com</a><br />
-            <a href="tel: +48 111 111 111">+48 111 111 111</a>
+            <p class="footer-contact__item footer-contact__item--text">
+              m. Warszawa, Aleje Jerozolimskie 21
+            </p>
+            <a
+              class="footer-contact__item footer-contact__item--link"
+              href="mailto: info@example.com"
+              >info@example.com</a
+            ><br />
+            <a
+              class="footer-contact__item footer-contact__item--link"
+              href="tel: +48 111 111 111"
+              >+48 111 111 111</a
+            >
           </div>
           <div class="join-us">
-            <h3>DOŁĄCZ DO NAS</h3>
-            <ul class="social-icon">
-              <li>
-                <a>
-                  <svg
-                    width="44"
-                    height="44"
-                    viewBox="-12 -12 44 44"
-                    fill="#FFFFFF"
-                  >
-                    <use
-                      href="../goit-markup-hw-04/images/icons.svg#icon-instagram"
-                      ,
-                      width="20"
-                      height="20"
-                    ></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a>
-                  <svg
-                    width="44"
-                    height="44"
-                    viewBox="-12 -12 44 44"
-                    fill="#FFFFFF"
-                  >
-                    <use
-                      href="../goit-markup-hw-04/images/icons.svg#icon-twitter"
-                      ,
-                      width="20"
-                      height="20"
-                    ></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a>
-                  <svg
-                    width="44"
-                    height="44"
-                    viewBox="-12 -12 44 44"
-                    fill="#FFFFFF"
-                  >
-                    <use
-                      href="../goit-markup-hw-04/images/icons.svg#icon-facebook"
-                      ,
-                      width="20"
-                      height="20"
-                    ></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a>
-                  <svg
+            <h3 class="join-us__heading">DOŁĄCZ DO NAS</h3>
+            <span class="join-us__social social-media">
+              <a class="social-media__link social-link"
+                ><svg
+                  class="social-link__icon--footer"
+                  width="44px"
+                  ,
+                  height="44px"
+                  viewBox="-12 -12 44 44"
+                  fill="#AFB1B8"
+                >
+                  <use
+                    href="../goit-markup-hw-04/images/icons.svg#icon-instagram"
+                    ,
+                    width="20px"
+                    ,
+                    height="20px"
+                  ></use>
+                </svg>
+              </a>
+              <a class="social-media__link social-link">
+                <svg
+                  class="social-link__icon--footer"
+                  width="44px"
+                  ,
+                  height="44px"
+                  viewBox="-13 -13 44 44"
+                  fill="#AFB1B8"
+                >
+                  <use
+                    href="../goit-markup-hw-04/images/icons.svg#icon-twitter"
+                    ,
+                    width="20px"
+                    ,
+                    height="20px"
+                  ></use>
+                </svg>
+              </a>
+              <a class="social-media__link social-link"
+                ><svg
+                  class="social-link__icon--footer"
+                  width="44px"
+                  ,
+                  height="44px"
+                  viewBox="-12 -12 44 44"
+                  fill="#AFB1B8"
+                >
+                  <use
+                    href="../goit-markup-hw-04/images/icons.svg#icon-facebook"
+                    ,
+                    width="20px"
+                    ,
+                    height="20px"
+                  ></use>
+                </svg>
+              </a>
+              <a class="social-media__link social-link"
+                ><svg
+                  class="social-link__icon--footer"
+                  width="44px"
+                  ,
+                  height="44px"
+                  viewBox="-12 -11 44 44"
+                  fill="#AFB1B8"
+                >
+                  <use
+                    href="../goit-markup-hw-04/images/icons.svg#icon-linkedin"
+                    ,
+                    width="20px"
+                    ,
+                    height="20px"
+                  ></use>
+                </svg>
+              </a>
+            </span>
+          </div>
+          <div class="footer__newsletter">
+            <form>
+              <label class="newsletter-label">
+                <div class="newsletter-label__input">
+                  ZAPISZ SIĘ DO NEWSLETTERA
+                  <input for="newsletter" type="email" placeholder="E-mail" />
+                </div>
+                <button class="newsletter-button" type="submit">
+                  Zapisz się<svg
+                    class="newsletter-button__icon"
                     width="44"
                     height="44"
                     viewBox="-12 -11 44 44"
                     fill="#FFFFFF"
                   >
                     <use
-                      href="../goit-markup-hw-04/images/icons.svg#icon-linkedin"
+                      href="../goit-markup-hw-05/images/icons.svg#icon-icon-send"
                       ,
                       width="20"
                       height="20"
                     ></use>
                   </svg>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="newsletter">
-            <form>
-              <label>
-                <div>
-                ZAPISZ SIĘ DO NEWSLETTERA
-                <input for="newsletter" type="email" placeholder="E-mail"/>
-              </div>
-                <button type="submit">Zapisz się<svg
-                  width="44"
-                  height="44"
-                  viewBox="-12 -11 44 44"
-                  fill="#FFFFFF"
-                >
-                  <use
-                    href="../goit-markup-hw-05/images/icons.svg#icon-icon-send"
-                    ,
-                    width="20"
-                    height="20"
-                  ></use>
-                </svg></button>
+                </button>
               </label>
             </form>
-                      </div>
+          </div>
         </div>
       </div>
     </footer>
