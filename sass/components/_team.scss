@@ -1,0 +1,66 @@
+.team {
+  padding-top: 0px;
+  background: #f5f4fa;
+  left: 0px;
+  top: 1449px;
+  &__list {
+    display: flex;
+    list-style-type: none;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  &__heading {
+    padding-top: 94px;
+    padding-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $main-black;
+  }
+}
+
+.team-card {
+  width: 270px;
+  left: 215px;
+  top: 1635px;
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  box-sizing: border-box;
+  text-align: center;
+  &__heading {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $main-black;
+    padding-block: 30px 10px;
+    margin-block: 0;
+  }
+  &__text {
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $main-grey;
+    margin-block: 0;
+  }
+}
+.social-media {
+  display: flex;
+  justify-content: space-evenly;
+  padding-block: 16px 30px;
+}
+
+.social-link__icon:hover,
+.social-link__icon:focus {
+  transition: $main-transition, $transition-bg;
+  background-color: $main-blue-color;
+  border-radius: 50px;
+  fill: white;
+  color: $main-blue-color;
+}

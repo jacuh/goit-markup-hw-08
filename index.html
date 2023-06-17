@@ -4,8 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://meyerweb.com/eric/tools/css/reset/" rel="stylesheet" />
-
+    <link
+      rel="stylesheet"
+      href="node_modules/modern-normalize/modern-normalize.css"
+    />
     <link href="css/main.min.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -39,9 +41,12 @@
           </nav>
         </div>
         <div class="header-contacts">
-          <a class="header-contacts__link" href="mailto: info@devstudio.com">
+          <a
+            class="header-contacts__link header-icon"
+            href="mailto: info@devstudio.com"
+          >
             <svg
-              class="header-contacts__link__icon"
+              class="header-icon__icon"
               height="44px"
               ,
               width="44px"
@@ -54,9 +59,11 @@
             </svg>
             info@devstudio.com</a
           >
-          <a class="header-contacts__link" href="tel: +48 111 111 111"
+          <a
+            class="header-contacts__link header-icon"
+            href="tel: +48 111 111 111"
             ><svg
-              class="header-contacts__link__icon"
+              class="header-icon__icon"
               height="44px"
               ,
               width="44px"
@@ -159,14 +166,16 @@
                     placeholder="Wprowadź tekst"
                   ></textarea>
                 </label>
-                <label class="checkbox">
+                <label class="modal-form__label checkbox">
                   <input type="checkbox" name="reguls" value="yes" required />
                   <span
                     >Oświadczam iż akceptuję <a href=""> Regulamin </a> i
                     <a href=""> Politykę Prywatności. </a></span
                   >
                 </label>
-                <button type="submit">Wyślij</button>
+                <button class="submit-button" class type="submit">
+                  Wyślij
+                </button>
               </form>
             </div>
           </div>
@@ -175,8 +184,13 @@
       <section>
         <div class="container">
           <ul class="lorem">
-            <li>
-              <svg width="270" height="120" viewBox="0 -15 65 100">
+            <li class="lorem__item lorem-card">
+              <svg
+                class="lorem-card__icon"
+                width="270"
+                height="120"
+                viewBox="0 -15 65 100"
+              >
                 <use
                   href="../goit-markup-hw-04/images/icons.svg#icon-antenna"
                   ,
@@ -186,12 +200,17 @@
                   ,
                 ></use>
               </svg>
-              <h3>LOREM IPSUM</h3>
+              <h3 class="lorem-card__heading">LOREM IPSUM</h3>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
               arcu sem. Sed non sodales dui. Interdum et malesuada
             </li>
-            <li>
-              <svg width="270" height="120" viewBox="0 -15 65 100">
+            <li class="lorem__item lorem-card">
+              <svg
+                class="lorem-card__icon"
+                width="270"
+                height="120"
+                viewBox="0 -15 65 100"
+              >
                 <use
                   href="../goit-markup-hw-04/images/icons.svg#icon-clock"
                   ,
@@ -200,12 +219,17 @@
                   height="70px"
                 ></use>
               </svg>
-              <h3>LOREM IPSUM</h3>
+              <h3 class="lorem-card__heading">LOREM IPSUM</h3>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
               arcu sem. Sed non sodales dui. Interdum et malesuada
             </li>
-            <li>
-              <svg width="270" height="120" viewBox="0 -15 65 100">
+            <li class="lorem__item lorem-card">
+              <svg
+                class="lorem-card__icon"
+                width="270"
+                height="120"
+                viewBox="0 -15 65 100"
+              >
                 <use
                   href="../goit-markup-hw-04/images/icons.svg#icon-diagram"
                   ,
@@ -214,12 +238,17 @@
                   height="70px"
                 ></use>
               </svg>
-              <h3>LOREM IPSUM</h3>
+              <h3 class="lorem-card__heading">LOREM IPSUM</h3>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
               arcu sem. Sed non sodales dui. Interdum et malesuada
             </li>
-            <li>
-              <svg width="270" height="120" viewBox="0 -15 65 100">
+            <li class="lorem__item lorem-card">
+              <svg
+                class="lorem-card__icon"
+                width="270"
+                height="120"
+                viewBox="0 -15 65 100"
+              >
                 <use
                   href="../goit-markup-hw-04/images/icons.svg#icon-astronaut"
                   ,
@@ -228,48 +257,49 @@
                   height="70px"
                 ></use>
               </svg>
-              <h3>LOREM IPSUM</h3>
+              <h3 class="lorem-card__heading">LOREM IPSUM</h3>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
               arcu sem. Sed non sodales dui. Interdum et malesuada
             </li>
           </ul>
         </div>
       </section>
-      <section class="what-we-doing">
+      <section class="our-job">
         <div class="container">
-          <h2>Czym się zajmujemy</h2>
-          <ul>
-            <li>
+          <h2 class="our-job__heading">Czym się zajmujemy</h2>
+          <ul class="our-job-list">
+            <li class="job-card">
               <img
               src="https://github.com/jacuh/goit-markup-hw-01/blob/main/images/image.jpg?raw=true"
               alt="purple pc" width: 370px; height: 294px; />
-              <p>APLIKACJE KOMPUTEROWE</p>
+              <p class="job-card__text">APLIKACJE KOMPUTEROWE</p>
             </li>
-            <li>
+            <li class="our-job-list__card job-card">
               <img src="images/image1.jpg" alt="smart pc" width: 370px; height:
               294px; />
-              <p>APLIKACJE MOBILNE</p>
+              <p class="job-card__text">APLIKACJE MOBILNE</p>
             </li>
-            <li>
+            <li class="our-job-list__card job-card">
               <img src="images/image2.jpg" alt="smart rainbow" width: 370px;
               height: 294px; />
-              <p>ROZWIĄZANIA GRAFICZNE</p>
+              <p class="job-card__text">ROZWIĄZANIA GRAFICZNE</p>
             </li>
           </ul>
         </div>
       </section>
       <section class="team">
         <div class="container">
-          <h2>Nasz zespół</h2>
-          <ul>
-            <li>
+          <h2 class="team__heading">Nasz zespół</h2>
+          <ul class="team__list">
+            <li class="team-card">
               <img src="images/image3.jpg" alt="handsome#1" width: 270px;
               height: 260px; />
-              <h3>John Doe</h3>
-              <p>Product Designer</p>
-              <span class="social-media">
-                <a class="social-icon"
+              <h3 class="team-card__heading">John Doe</h3>
+              <p class="team-card__text">Product Designer</p>
+              <span class="team-card__social social-media">
+                <a class="social-media__link social-link"
                   ><svg
+                    class="social-link__icon"
                     width="44px"
                     ,
                     height="44px"
@@ -285,8 +315,9 @@
                     ></use>
                   </svg>
                 </a>
-                <a class="social-icon">
+                <a class="social-media__link social-link">
                   <svg
+                    class="social-link__icon"
                     width="44px"
                     ,
                     height="44px"
@@ -302,8 +333,9 @@
                     ></use>
                   </svg>
                 </a>
-                <a class="social-icon"
+                <a class="social-media__link social-link"
                   ><svg
+                    class="social-link__icon"
                     width="44px"
                     ,
                     height="44px"
@@ -319,8 +351,9 @@
                     ></use>
                   </svg>
                 </a>
-                <a class="social-icon"
+                <a class="social-media__link social-link"
                   ><svg
+                    class="social-link__icon"
                     width="44px"
                     ,
                     height="44px"
@@ -338,14 +371,15 @@
                 </a>
               </span>
             </li>
-            <li>
+            <li class="team-card">
               <img src="images/image4.jpg" alt="pretty" width: 270px; height:
               260px; />
-              <h3>John Doe</h3>
-              <p>Frontend Developer</p>
-              <span class="social-media">
-                <a class="social-icon"
+              <h3 class="team-card__heading">John Doe</h3>
+              <p class="team-card__text">Frontend Developer</p>
+              <span class="team-card__social social-media">
+                <a class="social-media__link social-link"
                   ><svg
+                    class="social-link__icon"
                     width="44px"
                     ,
                     height="44px"
@@ -361,8 +395,9 @@
                     ></use>
                   </svg>
                 </a>
-                <a class="social-icon">
+                <a class="social-media__link social-link">
                   <svg
+                    class="social-link__icon"
                     width="44px"
                     ,
                     height="44px"
@@ -378,8 +413,9 @@
                     ></use>
                   </svg>
                 </a>
-                <a class="social-icon"
+                <a class="social-media__link social-link"
                   ><svg
+                    class="social-link__icon"
                     width="44px"
                     ,
                     height="44px"
@@ -395,8 +431,9 @@
                     ></use>
                   </svg>
                 </a>
-                <a class="social-icon"
+                <a class="social-media__link social-link"
                   ><svg
+                    class="social-link__icon"
                     width="44px"
                     ,
                     height="44px"
@@ -414,14 +451,15 @@
                 </a>
               </span>
             </li>
-            <li>
+            <li class="team-card">
               <img src="images/image5.jpg" alt="handsome#2" width: 270px;
               height: 260px; />
-              <h3>John Doe</h3>
-              <p>Marketing</p>
-              <span class="social-media">
-                <a class="social-icon"
+              <h3 class="team-card__heading">John Doe</h3>
+              <p class="team-card__text">Marketing</p>
+              <span class="team-card__social social-media">
+                <a class="social-media__link social-link"
                   ><svg
+                    class="social-link__icon"
                     width="44px"
                     ,
                     height="44px"
@@ -437,8 +475,9 @@
                     ></use>
                   </svg>
                 </a>
-                <a class="social-icon">
+                <a class="social-media__link social-link">
                   <svg
+                    class="social-link__icon"
                     width="44px"
                     ,
                     height="44px"
@@ -454,8 +493,9 @@
                     ></use>
                   </svg>
                 </a>
-                <a class="social-icon"
+                <a class="social-media__link social-link"
                   ><svg
+                    class="social-link__icon"
                     width="44px"
                     ,
                     height="44px"
@@ -471,8 +511,9 @@
                     ></use>
                   </svg>
                 </a>
-                <a class="social-icon"
+                <a class="social-media__link social-link"
                   ><svg
+                    class="social-link__icon"
                     width="44px"
                     ,
                     height="44px"
@@ -490,14 +531,15 @@
                 </a>
               </span>
             </li>
-            <li>
+            <li class="team-card">
               <img src="images/image6.jpg" alt="handsome#3" width: 270px;
               height: 260px; />
-              <h3>John Doe</h3>
-              <p>UI Designer</p>
-              <span class="social-media">
-                <a class="social-icon"
+              <h3 class="team-card__heading">John Doe</h3>
+              <p class="team-card__text">UI Designer</p>
+              <span class="team-card__social social-media">
+                <a class="social-media__link social-link"
                   ><svg
+                    class="social-link__icon"
                     width="44px"
                     ,
                     height="44px"
@@ -513,8 +555,9 @@
                     ></use>
                   </svg>
                 </a>
-                <a class="social-icon">
+                <a class="social-media__link social-link">
                   <svg
+                    class="social-link__icon"
                     width="44px"
                     ,
                     height="44px"
@@ -530,8 +573,9 @@
                     ></use>
                   </svg>
                 </a>
-                <a class="social-icon"
+                <a class="social-media__link social-link"
                   ><svg
+                    class="social-link__icon"
                     width="44px"
                     ,
                     height="44px"
@@ -547,8 +591,9 @@
                     ></use>
                   </svg>
                 </a>
-                <a class="social-icon"
+                <a class="social-media__link social-link"
                   ><svg
+                    class="social-link__icon"
                     width="44px"
                     ,
                     height="44px"
@@ -572,56 +617,92 @@
       <section>
         <div class="container">
           <div class="clients">
-            <h2>Nasi klienci</h2>
-            <ul>
-              <li>
-                <a href=""
-                  ><svg width="106px" , height="60px" fill="#AFB1B8">
+            <h2 class="clients__heading">Nasi klienci</h2>
+            <ul class="clients__list">
+              <li class="clients-card">
+                <a class="clients-link" href=""
+                  ><svg
+                    class="clients-link__icon"
+                    width="106px"
+                    ,
+                    height="60px"
+                    fill="#AFB1B8"
+                  >
                     <use
                       href="../goit-markup-hw-04/images/icons.svg#icon-client"
                     ></use>
                   </svg>
                 </a>
               </li>
-              <li>
-                <a href=""
-                  ><svg width="106px" , height="60px" fill="#AFB1B8">
+              <li class="clients-card">
+                <a class="clients-link" href=""
+                  ><svg
+                    class="clients-link__icon"
+                    width="106px"
+                    ,
+                    height="60px"
+                    fill="#AFB1B8"
+                  >
                     <use
                       href="../goit-markup-hw-04/images/icons.svg#icon-client2"
                     ></use>
                   </svg>
                 </a>
               </li>
-              <li>
-                <a href=""
-                  ><svg width="106px" , height="60px" fill="#AFB1B8">
+              <li class="clients-card">
+                <a class="clients-link" href=""
+                  ><svg
+                    class="clients-link__icon"
+                    width="106px"
+                    ,
+                    height="60px"
+                    fill="#AFB1B8"
+                  >
                     <use
                       href="../goit-markup-hw-04/images/icons.svg#icon-client3"
                     ></use>
                   </svg>
                 </a>
               </li>
-              <li>
-                <a href=""
-                  ><svg width="106px" , height="60px" fill="#AFB1B8">
+              <li class="clients-card">
+                <a class="clients-link" href=""
+                  ><svg
+                    class="clients-link__icon"
+                    width="106px"
+                    ,
+                    height="60px"
+                    fill="#AFB1B8"
+                  >
                     <use
                       href="../goit-markup-hw-04/images/icons.svg#icon-client4"
                     ></use>
                   </svg>
                 </a>
               </li>
-              <li>
-                <a href=""
-                  ><svg width="106px" , height="60px" fill="#AFB1B8">
+              <li class="clients-card">
+                <a class="clients-link" href=""
+                  ><svg
+                    class="clients-link__icon"
+                    width="106px"
+                    ,
+                    height="60px"
+                    fill="#AFB1B8"
+                  >
                     <use
                       href="../goit-markup-hw-04/images/icons.svg#icon-client5"
                     ></use>
                   </svg>
                 </a>
               </li>
-              <li>
-                <a href=""
-                  ><svg width="106px" , height="60px" fill="#AFB1B8">
+              <li class="clients-card">
+                <a class="clients-link" href=""
+                  ><svg
+                    class="clients-link__icon"
+                    width="106px"
+                    ,
+                    height="60px"
+                    fill="#AFB1B8"
+                  >
                     <use
                       href="../goit-markup-hw-04/images/icons.svg#icon-client6"
                     ></use>
@@ -635,8 +716,8 @@
     </main>
     <footer>
       <div class="container">
-        <div class="footer-content">
-          <div class="footer-contact">
+        <div class="footer">
+          <div class="footer__contact">
             <a
               class="logo-web"
               href="https://www.edu.goit.global/pl/learn/12473958/5360994/5361000/homework"
@@ -646,7 +727,7 @@
             <a href="mailto: info@example.com">info@example.com</a><br />
             <a href="tel: +48 111 111 111">+48 111 111 111</a>
           </div>
-          <div class="join-us">
+          <div class="footer__join-us">
             <h3>DOŁĄCZ DO NAS</h3>
             <ul class="social-icon">
               <li>
@@ -719,7 +800,7 @@
               </li>
             </ul>
           </div>
-          <div class="newsletter">
+          <div class="footer__newsletter">
             <form>
               <label>
                 <div>

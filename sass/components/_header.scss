@@ -1,8 +1,6 @@
 .header {
   border: 1px solid #ececec;
   padding-block: 32px;
-  &__container {
-  }
   &__childs {
     display: flex;
     justify-content: space-between;
@@ -20,7 +18,7 @@
     font-style: normal;
     font-weight: 700;
     font-size: 26px;
-    color: var(--main-blue-color);
+    color: $main-blue-color;
     left: 215px;
     top: 24px;
     text-decoration: none;
@@ -33,12 +31,12 @@
   display: inline;
   margin-left: 93px;
   &__link {
-    color: var(--main-black);
+    color: $main-black;
     text-decoration: none;
-    transition: var(--main-transition);
+    transition: $main-transition;
     &:hover,
     &:focus {
-      color: var(--main-blue-color);
+      color: $main-blue-color;
     }
   }
   &__item {
@@ -55,7 +53,7 @@
     &--active::after {
       content: "";
       position: absolute;
-      background: var(--main-blue-color);
+      background: $main-blue-color;
       height: 4px;
       left: 0;
       right: 0;
@@ -70,20 +68,24 @@
   &__link {
     display: flex;
     align-items: center;
-    color: var(--main-grey);
+    color: $main-grey;
     text-decoration: none;
-    transition: var(--main-transition);
+    transition: $transition-fill, $main-transition;
+    &:hover .header-icon__icon {
+      fill: $main-blue-color;
+    }
     &:hover,
     &:focus {
-      color: var(--main-blue-color);
+      fill: $main-blue-color;
+      color: $main-blue-color;
     }
-    &__icon {
-      fill: var(--main-grey);
-      transition: var(--transition-fill);
-      &:hover,
-      &:focus {
-        fill: var(--main-blue-color);
-      }
-    }
+  }
+}
+.header-icon__icon {
+  fill: $main-grey;
+  transition: $transition-fill, $main-transition;
+  &:hover,
+  &:focus {
+    color: $main-blue-color;
   }
 }

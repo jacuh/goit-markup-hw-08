@@ -1,10 +1,8 @@
-@use "./utils/vars" as *;
+@import "./utils/vars";
 @import "./components/header";
-@import "./components/button-area.scss";
-body {
-  font-family: $fontFamily;
-}
-
-a {
-  color: aliceblue;
-}
+@import "./components/button-area";
+@import "./components/lorem-section";
+@import "./components/globals";
+@import "./components/what-we-doing";
+@import "./components/team";
+@import "./components/_clients";

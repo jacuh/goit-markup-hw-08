@@ -1,0 +1,42 @@
+.clients {
+  text-align: center;
+  &__heading {
+    padding-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: 0.03em;
+    color: $main-black;
+    margin: 0;
+  }
+  &__list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+  }
+}
+
+.clients-card {
+  border: 1px solid #afb1b8;
+  padding-inline: 32px;
+  padding-block: 14px;
+  cursor: pointer;
+  transition: $transition-brdr;
+  &:hover,
+  &:focus {
+    border-color: $main-blue-color;
+  }
+  &:hover .clients-link__icon,
+  &:focus .clients-link__icon {
+    border-color: $main-blue-color;
+    transition: $transition-brdr;
+    fill: $main-blue-color;
+    transition-property: fill, scale;
+    transition-duration: 250ms, 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
+      cubic-bezier(0.4, 0, 0.2, 1);
+    scale: 2;
+  }
+}
