@@ -1,9 +1,12 @@
+footer {
+  background: #2f303a;
+}
+
 .footer {
   display: flex;
   justify-content: space-between;
   box-sizing: border-box;
   padding-block: 60px;
-  background: #2f303a;
 }
 
 .footer-logo {
