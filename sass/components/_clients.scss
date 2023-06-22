@@ -48,7 +48,6 @@
 @media #{$desktop} {
   .clients {
     text-align: center;
-    background: green;
     &__heading {
       padding-bottom: 50px;
       font-weight: 700;
@@ -61,6 +60,7 @@
     &__list {
       list-style-type: none;
       display: flex;
+      flex-wrap: nowrap;
       flex-direction: row;
       justify-content: space-between;
       margin: 0;
