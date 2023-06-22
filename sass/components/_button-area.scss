@@ -10,10 +10,10 @@
   &__heading {
     padding-top: 200px;
     margin-block: 0px 40px;
+    font-size: 26px;
     font-weight: 900;
-    font-size: 44px;
-    line-height: 60px;
-    letter-spacing: 0.06em;
+    line-height: 42px;
+    letter-spacing: 1.56px;
     text-transform: uppercase;
     color: #ffffff;
   }
@@ -50,18 +50,16 @@
     cubic-bezier(0.4, 0, 0.2, 1) cubic-bezier(0.4, 0, 0.2, 1);
   &__window {
     display: flex;
-    justify-content: flex-start;
     flex-direction: column;
     background-color: #ffffff;
-    min-width: 521px;
+    width: 450px;
     min-height: 582px;
   }
 }
 .modal-content {
   display: flex;
-  justify-content: center;
-  width: 521px;
-  box-sizing: border-box;
+  align-items: center;
+  margin: 0 auto;
 }
 
 .modal-form {
@@ -84,7 +82,7 @@
   flex-direction: column;
   & input {
     box-sizing: border-box;
-    width: 448px;
+    width: 370px;
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
@@ -110,7 +108,8 @@
     box-sizing: border-box;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-    width: 448px;
+    resize: none;
+    width: 370px;
     height: 120px;
     padding-inline: 16px;
     padding-block: 12px;
@@ -202,4 +201,212 @@
   pointer-events: none;
   visibility: hidden;
   opacity: 0;
+}
+
+@media #{$desktop} {
+  .button-area {
+    height: 600px;
+    background: #2f303a;
+    background-image: url(../images/background-button.jpg);
+    background-position: center;
+    background-size: cover;
+    box-shadow: inset 0 0 0 2000px rgba(47, 48, 58, 0.4);
+    padding: 0;
+    text-align: center;
+    &__heading {
+      padding-top: 200px;
+      margin-block: 0px 40px;
+      font-size: 44px;
+      font-weight: 900;
+      line-height: 60px;
+      letter-spacing: 2.64px;
+      text-transform: uppercase;
+      color: #ffffff;
+    }
+    &__button {
+      background-color: $main-blue-color;
+      border-radius: 4px;
+      width: 200px;
+      height: 50px;
+      border-color: $main-blue-color;
+      color: #ffffff;
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 30px;
+      cursor: pointer;
+      box-shadow: 0px 4px 4px rgba(17, 16, 16, 0.15);
+    }
+  }
+
+  .modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+    background: rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    transition-property: transform, visibility, opacity;
+    transition-duration: 250ms, 250ms, 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
+      cubic-bezier(0.4, 0, 0.2, 1) cubic-bezier(0.4, 0, 0.2, 1);
+    &__window {
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+      background-color: #ffffff;
+      min-width: 521px;
+      min-height: 582px;
+    }
+  }
+  .modal-content {
+    display: flex;
+    justify-content: center;
+    width: 521px;
+    box-sizing: border-box;
+  }
+
+  .modal-form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    &__heading {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 23px;
+      padding-block: 12px;
+      letter-spacing: 0.03em;
+    }
+  }
+
+  .modal-label {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    & input {
+      box-sizing: border-box;
+      width: 448px;
+      height: 40px;
+      border: 1px solid rgba(33, 33, 33, 0.2);
+      border-radius: 4px;
+      padding-left: 44px;
+      margin-block: 4px 10px;
+      transition: $transition-brdr;
+      &:hover + .modal-label__icon,
+      &:focus + .modal-label__icon {
+        fill: $main-blue-color;
+      }
+      &:hover,
+      &:focus {
+        border: 1px solid $main-blue-color;
+        outline: none;
+      }
+    }
+    &__icon {
+      position: absolute;
+      margin-top: 21px;
+      transition: $transition-fill, $main-transition;
+    }
+    &__textarea {
+      box-sizing: border-box;
+      border: 1px solid rgba(33, 33, 33, 0.2);
+      border-radius: 4px;
+      width: 448px;
+      height: 120px;
+      padding-inline: 16px;
+      padding-block: 12px;
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 14px;
+      letter-spacing: 0.01em;
+      margin-block: 4px 20px;
+      transition: $transition-brdr;
+      &:hover,
+      &:focus {
+        outline: none;
+        border: 1px solid $main-blue-color;
+      }
+    }
+  }
+
+  .checkbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: $main-grey;
+    outline: none;
+    & input {
+      display: none;
+      & + *::before {
+        content: "";
+        display: inline-block;
+        vertical-align: bottom;
+        width: 1rem;
+        height: 1rem;
+        border-radius: 10%;
+        border-style: solid;
+        border-width: 0.1rem;
+        border-color: var(--main-grey);
+        margin-right: 7px;
+        margin-bottom: 3px;
+      }
+      &:checked + *::before {
+        content: "✓";
+        color: white;
+        text-align: center;
+        background: $main-blue-color;
+        border-color: $main-blue-color;
+      }
+    }
+  }
+
+  .submit-button {
+    width: 200px;
+    height: 50px;
+    background: $main-blue-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    border-color: $main-blue-color;
+    color: #ffffff;
+    cursor: pointer;
+    margin-block: 30px 40px;
+  }
+
+  .close-button {
+    display: flex;
+    justify-content: end;
+    &__button {
+      width: 30px;
+      height: 30px;
+      border-radius: 30px;
+      background: #ffffff;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      margin: 8px 8px 0px 8px;
+      cursor: pointer;
+    }
+  }
+  .is-hidden {
+    pointer-events: none;
+    visibility: hidden;
+    opacity: 0;
+  }
 }

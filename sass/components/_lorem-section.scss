@@ -1,27 +1,54 @@
 .lorem {
   display: flex;
-  justify-content: space-between;
-  list-style-type: none;
+  flex-direction: column;
+  gap: 30px;
 }
 
 .lorem-card {
   display: inline-block;
-  width: 270px;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
   color: $main-grey;
-  text-align: left;
+  text-align: center;
   &__icon {
     background-color: #f5f4fa;
   }
   &__heading {
-    font-weight: 700;
     font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.03em;
+    font-weight: 700;
+    letter-spacing: 0.42px;
     text-transform: uppercase;
     color: $main-black;
     padding-bottom: 10px;
+  }
+}
+@media #{$desktop} {
+  .lorem {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+  }
+
+  .lorem-card {
+    display: inline-block;
+    width: 270px;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: $main-grey;
+    text-align: left;
+    &__icon {
+      background-color: #f5f4fa;
+    }
+    &__heading {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 16px;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: $main-black;
+      padding-bottom: 10px;
+    }
   }
 }

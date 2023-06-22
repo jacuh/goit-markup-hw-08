@@ -4,10 +4,31 @@
 }
 
 .container {
-  width: 1200px;
-  margin: 0 auto;
+  width: 480px;
 }
 
 section {
-  padding-block: 94px;
+  padding-block: 60px;
+}
+
+@media #{$tablet} {
+  .container {
+    width: 768px;
+    margin: 0 auto;
+  }
+}
+@media #{$desktop} {
+  * {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+  }
+
+  .container {
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+  section {
+    padding-block: 94px;
+  }
 }

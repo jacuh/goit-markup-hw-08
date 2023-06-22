@@ -7,30 +7,29 @@
     display: flex;
     list-style-type: none;
     flex-direction: row;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
   }
   &__heading {
-    padding-top: 94px;
-    padding-bottom: 50px;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 42px;
-    text-align: center;
-    letter-spacing: 0.03em;
+    padding-block: 60px 30px;
     color: $main-black;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 1.08px;
+    text-align: center;
   }
 }
 
 .team-card {
-  width: 270px;
-  left: 215px;
-  top: 1635px;
+  width: 450px;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  box-sizing: border-box;
   text-align: center;
+  padding-bottom: 24px;
   &__heading {
     font-weight: 500;
     font-size: 16px;
@@ -47,23 +46,79 @@
     text-align: center;
     letter-spacing: 0.03em;
     color: $main-grey;
+    padding-bottom: 16px;
     margin-block: 0;
   }
 }
-.social-media {
-  display: flex;
-  justify-content: space-evenly;
-  padding-block: 16px 30px;
-}
 
-.social-link__icon {
-  border-radius: 50px;
-  transition: $main-transition, $transition-bg;
-  &:hover,
-  &:focus {
-    background-color: $main-blue-color;
+@media #{$desktop} {
+  .team {
+    padding-top: 0px;
+    background: #f5f4fa;
+    left: 0px;
+    top: 1449px;
+    &__list {
+      display: flex;
+      list-style-type: none;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    &__heading {
+      padding-top: 94px;
+      padding-bottom: 50px;
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 42px;
+      text-align: center;
+      letter-spacing: 0.03em;
+      color: $main-black;
+    }
+  }
 
-    fill: white;
-    color: $main-blue-color;
+  .team-card {
+    width: 270px;
+    left: 215px;
+    top: 1635px;
+    background: #ffffff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    box-sizing: border-box;
+    text-align: center;
+    &__heading {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 19px;
+      text-align: center;
+      letter-spacing: 0.03em;
+      color: $main-black;
+      padding-block: 30px 10px;
+      margin-block: 0;
+    }
+    &__text {
+      font-size: 16px;
+      line-height: 19px;
+      text-align: center;
+      letter-spacing: 0.03em;
+      color: $main-grey;
+      margin-block: 0;
+    }
+  }
+  .social-media {
+    display: flex;
+    justify-content: space-evenly;
+    padding-block: 16px 30px;
+  }
+
+  .social-link__icon {
+    border-radius: 50px;
+    transition: $main-transition, $transition-bg;
+    &:hover,
+    &:focus {
+      background-color: $main-blue-color;
+
+      fill: white;
+      color: $main-blue-color;
+    }
   }
 }

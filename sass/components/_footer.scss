@@ -1,12 +1,10 @@
-footer {
-  background: #2f303a;
-}
-
 .footer {
-  display: flex;
-  justify-content: space-between;
-  box-sizing: border-box;
+  text-align: center;
   padding-block: 60px;
+  background: #2f303a;
+  &__newsletter {
+    padding-top: 60px;
+  }
 }
 
 .footer-logo {
@@ -22,30 +20,35 @@ footer {
   }
 }
 
-.footer-contact__item {
-  padding-top: 20px;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-  &--text {
-    color: #ffffff;
-  }
-  &--link {
-    color: rgba(255, 255, 255, 0.6);
-    text-decoration: none;
-    padding: 0;
+.footer-contact {
+  padding-bottom: 60px;
+  &__item {
+    padding-top: 20px;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    &--text {
+      color: #ffffff;
+    }
+    &--link {
+      color: rgba(255, 255, 255, 0.6);
+      text-decoration: none;
+      padding-bottom: 8px;
+    }
   }
 }
 
 .join-us {
-  padding-left: 70px;
   &__heading {
     color: #ffffff;
+    font-size: 14px;
+    font-family: Roboto;
+    font-weight: 700;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
     padding-bottom: 20px;
   }
   &__social {
-    display: flex;
-    flex-direction: row;
     padding: 0;
   }
 }
@@ -69,7 +72,8 @@ footer {
 
 .newsletter-label {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
+  flex-direction: column;
   &__input {
     font-style: normal;
     font-weight: 700;
@@ -96,9 +100,8 @@ footer {
     align-items: center;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
-    margin-top: 20px;
-    margin-right: 12px;
     padding-left: 16px;
+    margin: 20px;
     outline: none;
   }
 }
@@ -117,6 +120,260 @@ footer {
   font-size: 16px;
   line-height: 30px;
   letter-spacing: 0.06em;
-  cursor: pointer;
   color: #ffffff;
+}
+
+@media #{$tablet} {
+  footer {
+    background: red;
+  }
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    background: #2f303a;
+    padding-block: 60px;
+    &__newsletter {
+      display: block;
+    }
+  }
+
+  .footer-logo {
+    color: $main-blue-color;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    font-family: "Raleway";
+    text-decoration: none;
+    &__studio {
+      color: #ffffff;
+    }
+  }
+
+  .footer-contact {
+    padding: 0;
+    &__item {
+      padding-top: 20px;
+      font-size: 14px;
+      line-height: 24px;
+      letter-spacing: 0.03em;
+      &--text {
+        color: #ffffff;
+      }
+      &--link {
+        color: rgba(255, 255, 255, 0.6);
+        text-decoration: none;
+        padding: 0;
+      }
+    }
+
+    .join-us {
+      padding-left: 144px;
+      &__heading {
+        color: #ffffff;
+        padding-block: 0;
+      }
+      &__social {
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+      }
+    }
+
+    .social-link {
+      padding-left: 10px;
+      &:first-child {
+        padding: 0;
+      }
+      &__icon--footer {
+        fill: #ffffff;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 80px;
+        transition: $main-transition, $transition-bg;
+        &:hover,
+        &:focus {
+          background: $main-blue-color;
+        }
+      }
+    }
+
+    .newsletter-label {
+      display: flex;
+      align-items: flex-end;
+      &__input {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+      }
+      &__input input {
+        width: 358px;
+        height: 50px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        border-radius: 4px;
+        background-color: transparent;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255, 0.6);
+        margin-top: 20px;
+        margin-right: 12px;
+        padding-left: 16px;
+        outline: none;
+      }
+    }
+
+    .newsletter-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 200px;
+      height: 50px;
+      background: $main-blue-color;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+      border-radius: 4px;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 30px;
+      letter-spacing: 0.06em;
+      cursor: pointer;
+      color: #ffffff;
+    }
+  }
+
+  @media #{$desktop} {
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      box-sizing: border-box;
+      background: #2f303a;
+      padding-block: 60px;
+    }
+
+    .footer-logo {
+      color: $main-blue-color;
+      font-weight: 700;
+      font-size: 26px;
+      line-height: 31px;
+      letter-spacing: 0.03em;
+      font-family: "Raleway";
+      text-decoration: none;
+      &__studio {
+        color: #ffffff;
+      }
+    }
+
+    .footer-contact__item {
+      padding-top: 20px;
+      font-size: 14px;
+      line-height: 24px;
+      letter-spacing: 0.03em;
+      &--text {
+        color: #ffffff;
+      }
+      &--link {
+        color: rgba(255, 255, 255, 0.6);
+        text-decoration: none;
+        padding: 0;
+      }
+    }
+
+    .join-us {
+      padding-left: 70px;
+      &__heading {
+        color: #ffffff;
+        padding-bottom: 20px;
+      }
+      &__social {
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+      }
+    }
+
+    .social-link {
+      padding-left: 10px;
+      &:first-child {
+        padding: 0;
+      }
+      &__icon--footer {
+        fill: #ffffff;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 80px;
+        transition: $main-transition, $transition-bg;
+        &:hover,
+        &:focus {
+          background: $main-blue-color;
+        }
+      }
+    }
+
+    .newsletter-label {
+      display: flex;
+      align-items: flex-end;
+      &__input {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+      }
+      &__input input {
+        width: 358px;
+        height: 50px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        border-radius: 4px;
+        background-color: transparent;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255, 0.6);
+        margin-top: 20px;
+        margin-right: 12px;
+        padding-left: 16px;
+        outline: none;
+      }
+    }
+
+    .newsletter-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 200px;
+      height: 50px;
+      background: $main-blue-color;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+      border-radius: 4px;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 30px;
+      letter-spacing: 0.06em;
+      cursor: pointer;
+      color: #ffffff;
+    }
+  }
 }
