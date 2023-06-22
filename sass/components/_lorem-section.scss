@@ -23,6 +23,38 @@
     padding-bottom: 10px;
   }
 }
+
+@media #{$tablet} {
+  .lorem {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .lorem-card {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: $main-grey;
+    text-align: left;
+    width: 354px;
+
+    &__icon {
+      background-color: #f5f4fa;
+    }
+    &__heading {
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 0.42px;
+      text-transform: uppercase;
+      color: $main-black;
+      padding-bottom: 10px;
+    }
+  }
+}
+
 @media #{$desktop} {
   .lorem {
     display: flex;

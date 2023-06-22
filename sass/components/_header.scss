@@ -48,8 +48,106 @@
   display: block;
 }
 
+@media #{$tablet} {
+  .mobile-menu-content {
+    display: none;
+  }
+
+  .header {
+    border: 1px solid #ececec;
+    padding-block: 32px;
+    &__childs {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 16px;
+    }
+  }
+
+  .left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    &__logo-web {
+      font-family: "Raleway";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 26px;
+      color: $main-blue-color;
+      left: 215px;
+      top: 24px;
+      text-decoration: none;
+      &--studio {
+        color: #000000;
+      }
+    }
+  }
+  .main-nav {
+    display: inline;
+    padding-left: 83px;
+    &__link {
+      color: $main-black;
+      text-decoration: none;
+      transition: $main-transition;
+      &:hover,
+      &:focus {
+        color: $main-blue-color;
+      }
+    }
+    &__item {
+      margin-right: 46px;
+      position: relative;
+      display: inline;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 16px;
+      letter-spacing: 0.02em;
+      &--contact {
+        margin: 0;
+      }
+      &--active::after {
+        content: "";
+        position: absolute;
+        background: $main-blue-color;
+        height: 4px;
+        left: 0;
+        right: 0;
+        bottom: -28px;
+      }
+    }
+  }
+
+  .header-contacts {
+    display: flex;
+    flex-direction: column;
+    &__link {
+      display: flex;
+      align-items: center;
+      color: $main-grey;
+      text-decoration: none;
+      transition: $transition-fill, $main-transition;
+      &:hover .header-icon__icon {
+        fill: $main-blue-color;
+      }
+      &:hover,
+      &:focus {
+        fill: $main-blue-color;
+        color: $main-blue-color;
+      }
+    }
+  }
+  .header-icon__icon {
+    fill: $main-grey;
+    transition: $transition-fill, $main-transition;
+    &:hover,
+    &:focus {
+      color: $main-blue-color;
+    }
+  }
+}
+
 @media #{$desktop} {
-  .mobile-menu {
+  .mobile-menu-content {
     display: none;
   }
 
