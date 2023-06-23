@@ -75,10 +75,35 @@
             +48 111 111 111</a
           >
         </div>
+        <button
+        class="menu-toggle js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
       </div>
-      <div class="mobile-menu-content">
-        <button class="" type="button" js-open-menu>=</button>
-        <div class="mm-card" js-menu-container></div>
+      <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+          <svg
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
+
+        <ul class="mobile-menu">
+          <li><a href="" class="link">About</a></li>
+          <li><a href="" class="link">Products</a></li>
+          <li><a href="" class="link">Contacts</a></li>
+          <li><a href="" class="link">Career</a></li>
+        </ul>
       </div>
     </header>
     <main>
@@ -294,13 +319,9 @@
           <h2 class="team__heading">Nasz zespół</h2>
           <ul class="team__list">
             <li class="team-card">
-              <img
-                src="images/image3.jpg"
-                ,
-                alt="handsome#1"
-                ,
-                srcset="images/image3-300x1.jpg w480"
-              />
+  <picture>
+    <source media="(min-width: 768px)" srcset="images/image3.jpg">
+  </picture>
               <h3 class="team-card__heading">John Doe</h3>
               <p class="team-card__text">Product Designer</p>
               <span class="team-card__social social-media">
