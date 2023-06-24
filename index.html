@@ -76,10 +76,12 @@
           >
         </div>
         <button
-        class="menu-toggle js-open-menu"
-        aria-expanded="false"
-        aria-controls="mobile-menu"
-      >
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          =
+        </button>
       </div>
       <div class="menu-container js-menu-container" id="mobile-menu">
         <button class="menu-toggle js-close-menu">
@@ -99,11 +101,26 @@
         </button>
 
         <ul class="mobile-menu">
-          <li><a href="" class="link">About</a></li>
-          <li><a href="" class="link">Products</a></li>
-          <li><a href="" class="link">Contacts</a></li>
-          <li><a href="" class="link">Career</a></li>
+          <li><a href="index.html" class="link">Agencja</a></li>
+          <li><a href="portfolio.html" class="link">Portfolio</a></li>
+          <li><a href="" class="link">Kontakt</a></li>
         </ul>
+        <div class="mm-contacts">
+          <a class="mm-contacts__link" href="mailto: info@devstudio.com">
+            info@devstudio.com</a
+          >
+          <a class="mm-contacts__link" href="tel: +48 111 111 111">
+            +48 111 111 111</a
+          >
+        </div>
+        <div class="mm-social">
+          <ul>
+            <li><a>Instagram</a></li>
+            <li><a>Twitter</a></li>
+            <li><a>Facebook</a></li>
+            <li><a>Linkedin</a></li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -319,9 +336,16 @@
           <h2 class="team__heading">Nasz zespół</h2>
           <ul class="team__list">
             <li class="team-card">
-  <picture>
-    <source media="(min-width: 768px)" srcset="images/image3.jpg">
-  </picture>
+              <picture>
+                <source media="(min-width: 900px)" srcset="images/image3.jpg" />
+                <source media="(min-width: 601px)" srcset="images/image3.jpg" />
+                <source
+                  media="(max-width: 600px)"
+                  srcset="images/image3-300x1 x1, images/image3-300x2.jpg"
+                  sizes="450px"
+                />
+                <img scr="images/image3.jpg" type="jpg" />
+              </picture>
               <h3 class="team-card__heading">John Doe</h3>
               <p class="team-card__text">Product Designer</p>
               <span class="team-card__social social-media">
