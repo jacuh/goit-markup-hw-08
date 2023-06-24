@@ -57,7 +57,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-
   margin: 0;
   padding: 0;
   background-color: transparent;
@@ -65,6 +64,16 @@ body {
   border: none;
   border-radius: 50%;
   outline: none;
+  &__icon {
+    transition: $main-transition, $transition-fill;
+  }
+  &:hover .menu-toggle__icon {
+    fill: $main-blue-color;
+  }
+
+  .mm-list {
+    list-style-type: none;
+  }
 }
 
 @media (min-width: 768px) {
@@ -78,18 +87,58 @@ body {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
+.mm-close {
+  position: absolute;
+  inset: 15px 100px auto auto;
+  border: none;
+  border-radius: 50%;
+  &__icon {
+    transition: $transition-fill;
+  }
+  &:hover .mm-close__icon {
+    fill: $main-blue-color;
+  }
+}
+
+.mm-social-list {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+  &__item {
+    padding-inline: 10px;
+    border-left: 1px solid $main-grey;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0.36px;
+    transition: transform 250ms;
+    &:hover {
+      transform: translateY(-10px);
+    }
+    &:first-of-type {
+      border-left: none;
+    }
+  }
+  &__link {
+    color: $main-blue-color;
+    text-decoration: none;
+  }
+}
+
 .menu-container {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: space-around;
+  justify-content: flex-start;
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
   padding: 32px;
-  background-color: #3f51b5;
+  background-color: #ffffff;
   z-index: 999;
 
   transform: translateX(100%);
@@ -111,6 +160,21 @@ body {
   padding: 0;
   margin: 0;
   list-style: none;
+  &__item {
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: 0.8px;
+    padding-bottom: 36px;
+  }
+  &__link {
+    text-decoration: none;
+    color: $main-black;
+    transition: $main-transition;
+    &:hover,
+    &:focus {
+      color: $main-blue-color;
+    }
+  }
 }
 
 .mobile-menu .link {
@@ -130,6 +194,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  padding-block: 300px 64px;
   &__link {
     color: $main-grey;
     text-decoration: none;
@@ -139,7 +204,7 @@ body {
     transition: $main-transition, scale 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover {
       color: $main-blue-color;
-      scale: 1.5;
+      scale: 1.2;
     }
   }
 }

@@ -80,14 +80,30 @@
           aria-expanded="false"
           aria-controls="mobile-menu"
         >
-          =
+          <svg
+            class="menu-toggle__icon"
+            width="44px"
+            ,
+            height="44px"
+            viewBox="-12 -12 44 44"
+            fill="#AFB1B8"
+          >
+            <use
+              href="../goit-markup-hw-08/images/icons.svg#mobile-menu"
+              ,
+              width="20px"
+              ,
+              height="20px"
+            ></use>
+          </svg>
         </button>
       </div>
       <div class="menu-container js-menu-container" id="mobile-menu">
-        <button class="menu-toggle js-close-menu">
+        <button class="mm-close js-close-menu">
           <svg
+            class="mm-close__icon"
             fill="currentColor"
-            viewBox="0 0 20 20"
+            viewBox="0 -1 20 20"
             xmlns="http://www.w3.org/2000/svg"
             width="24"
             height="24"
@@ -101,9 +117,19 @@
         </button>
 
         <ul class="mobile-menu">
-          <li><a href="index.html" class="link">Agencja</a></li>
-          <li><a href="portfolio.html" class="link">Portfolio</a></li>
-          <li><a href="" class="link">Kontakt</a></li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="index.html" class="link"
+              >Agencja</a
+            >
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="portfolio.html" class="link"
+              >Portfolio</a
+            >
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="" class="link">Kontakt</a>
+          </li>
         </ul>
         <div class="mm-contacts">
           <a class="mm-contacts__link" href="mailto: info@devstudio.com">
@@ -114,11 +140,27 @@
           >
         </div>
         <div class="mm-social">
-          <ul>
-            <li><a>Instagram</a></li>
-            <li><a>Twitter</a></li>
-            <li><a>Facebook</a></li>
-            <li><a>Linkedin</a></li>
+          <ul class="mm-social-list">
+            <li class="mm-social-list__item">
+              <a class="mm-social-list__link" href="http://www.instagram.com"
+                >Instagram</a
+              >
+            </li>
+            <li class="mm-social-list__item">
+              <a class="mm-social-list__link" href="http://www.twitter.com"
+                >Twitter</a
+              >
+            </li>
+            <li class="mm-social-list__item">
+              <a class="mm-social-list__link" href="http://www.facebook.com"
+                >Facebook</a
+              >
+            </li>
+            <li class="mm-social-list__item">
+              <a class="mm-social-list__link" href="http://www.linkedin.com"
+                >Linkedin</a
+              >
+            </li>
           </ul>
         </div>
       </div>
@@ -338,13 +380,15 @@
             <li class="team-card">
               <picture>
                 <source media="(min-width: 900px)" srcset="images/image3.jpg" />
-                <source media="(min-width: 601px)" srcset="images/image3.jpg" />
+                <source
+                  media="(min-width: 601px)"
+                  srcset="images/image3-600x1 x1, images/image3-600x2.jpg"
+                />
                 <source
                   media="(max-width: 600px)"
                   srcset="images/image3-300x1 x1, images/image3-300x2.jpg"
-                  sizes="450px"
                 />
-                <img scr="images/image3.jpg" type="jpg" />
+                <img scr="images/image3.jpg" type="jpg" alt="handsome1" />
               </picture>
               <h3 class="team-card__heading">John Doe</h3>
               <p class="team-card__text">Product Designer</p>
@@ -424,8 +468,18 @@
               </span>
             </li>
             <li class="team-card">
-              <img src="images/image4.jpg" alt="pretty" width: 270px; height:
-              260px; />
+              <picture>
+                <source media="(min-width: 900px)" srcset="images/image4.jpg" />
+                <source
+                  media="(min-width: 601px)"
+                  srcset="images/image4-600x1 x1, images/image4-600x2.jpg"
+                />
+                <source
+                  media="(max-width: 600px)"
+                  srcset="images/image4-300x1 x1, images/image4-300x2.jpg"
+                />
+                <img scr="images/image4.jpg" type="jpg" alt="pretty" />
+              </picture>
               <h3 class="team-card__heading">John Doe</h3>
               <p class="team-card__text">Frontend Developer</p>
               <span class="team-card__social social-media">
@@ -504,8 +558,18 @@
               </span>
             </li>
             <li class="team-card">
-              <img src="images/image5.jpg" alt="handsome#2" width: 270px;
-              height: 260px; />
+              <picture>
+                <source media="(min-width: 900px)" srcset="images/image5.jpg" />
+                <source
+                  media="(min-width: 601px)"
+                  srcset="images/image5-600x1 x1, images/image5-600x2.jpg"
+                />
+                <source
+                  media="(max-width: 600px)"
+                  srcset="images/image5-300x1 x1, images/image5-300x2.jpg"
+                />
+                <img scr="images/image5.jpg" type="jpg" alt="handsome2" />
+              </picture>
               <h3 class="team-card__heading">John Doe</h3>
               <p class="team-card__text">Marketing</p>
               <span class="team-card__social social-media">
@@ -584,8 +648,18 @@
               </span>
             </li>
             <li class="team-card">
-              <img src="images/image6.jpg" alt="handsome#3" width: 270px;
-              height: 260px; />
+              <picture>
+                <source media="(min-width: 900px)" srcset="images/image6.jpg" />
+                <source
+                  media="(min-width: 601px)"
+                  srcset="images/image6-600x1 x1, images/image6-600x2.jpg"
+                />
+                <source
+                  media="(max-width: 600px)"
+                  srcset="images/image6-300x1 x1, images/image6-300x2.jpg"
+                />
+                <img scr="images/image6.jpg" type="jpg" alt="hansome3" />
+              </picture>
               <h3 class="team-card__heading">John Doe</h3>
               <p class="team-card__text">UI Designer</p>
               <span class="team-card__social social-media">
