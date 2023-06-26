@@ -83,8 +83,8 @@
     }
   }
   .main-nav {
-    display: inline;
-    padding-left: 83px;
+    display: flex;
+    padding-left: 20px;
     &__link {
       color: $main-black;
       text-decoration: none;
@@ -181,7 +181,7 @@
     }
   }
   .main-nav {
-    display: inline;
+    display: flex;
     margin-left: 93px;
     &__link {
       color: $main-black;

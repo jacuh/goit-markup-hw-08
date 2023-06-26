@@ -4,12 +4,13 @@
   padding: 0;
 }
 
+button,
 a {
   cursor: pointer;
 }
 
 .container {
-  width: 480px;
+  max-width: 480px;
   margin: 0 auto;
 }
 
@@ -19,7 +20,8 @@ section {
 
 @media #{$tablet} {
   .container {
-    width: 768px;
+    min-width: 768px;
+    max-width: 1199px;
     margin: 0 auto;
   }
 }
@@ -30,7 +32,8 @@ section {
   }
 
   .container {
-    width: 1200px;
+    min-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
   }
 

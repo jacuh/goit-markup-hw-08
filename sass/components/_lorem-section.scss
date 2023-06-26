@@ -28,9 +28,10 @@
 @media #{$tablet} {
   .lorem {
     display: flex;
+    justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 30px;
   }
 
   .lorem-card {
@@ -40,7 +41,7 @@
     letter-spacing: 0.03em;
     color: $main-grey;
     text-align: left;
-    width: 354px;
+    width: 390px;
 
     &__icon {
       background-color: #f5f4fa;
