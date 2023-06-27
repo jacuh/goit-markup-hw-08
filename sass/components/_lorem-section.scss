@@ -43,7 +43,7 @@
     letter-spacing: 0.03em;
     color: $main-grey;
     text-align: left;
-    width: 390px;
+    width: 354px;
 
     &__icon {
       background-color: #f5f4fa;
@@ -64,8 +64,10 @@
   .lorem {
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
     justify-content: space-between;
     list-style-type: none;
+    margin: 0 auto;
   }
 
   .lorem-card {

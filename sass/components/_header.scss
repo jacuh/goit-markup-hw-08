@@ -219,6 +219,7 @@
   .header-contacts {
     display: flex;
     align-items: center;
+    flex-direction: row;
     &__link {
       display: flex;
       align-items: center;
