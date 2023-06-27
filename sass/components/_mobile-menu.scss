@@ -54,6 +54,7 @@ body {
   border-radius: 50%;
   outline: none;
   &__icon {
+    fill: $main-black;
     transition: $main-transition, $transition-fill;
   }
   &:hover .menu-toggle__icon {
