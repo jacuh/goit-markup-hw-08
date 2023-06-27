@@ -1,7 +1,10 @@
+footer {
+  background: #2f303a;
+}
+
 .footer {
   text-align: center;
   padding-block: 60px;
-  background: #2f303a;
   &__newsletter {
     padding-top: 60px;
   }
@@ -124,13 +127,16 @@
 }
 
 @media #{$tablet} {
+  footer {
+    background: #2f303a;
+  }
+
   .footer {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
     box-sizing: border-box;
-    background: #2f303a;
     padding-block: 60px;
     &__newsletter {
       display: block;
@@ -253,11 +259,14 @@
   }
 }
 @media #{$desktop} {
+  footer {
+    background: #2f303a;
+  }
+
   .footer {
     display: flex;
     justify-content: space-between;
     box-sizing: border-box;
-    background: #2f303a;
     padding-block: 60px;
     &__contact {
       padding: 0;

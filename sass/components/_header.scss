@@ -5,6 +5,7 @@
   display: flex;
   justify-content: space-between;
   &__childs {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -84,7 +85,7 @@
   }
   .main-nav {
     display: flex;
-    padding-left: 20px;
+    padding-left: 83px;
     &__link {
       color: $main-black;
       text-decoration: none;

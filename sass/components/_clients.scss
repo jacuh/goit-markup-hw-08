@@ -1,5 +1,6 @@
 .clients {
   text-align: center;
+  margin: 0 auto;
   &__heading {
     padding-bottom: 30px;
     font-weight: 700;
@@ -43,6 +44,19 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
       cubic-bezier(0.4, 0, 0.2, 1);
     scale: 2;
+  }
+}
+
+@media #{$tablet} {
+  .clients {
+    max-width: 740px;
+    &__heading {
+      color: $main-black;
+      text-align: center;
+      font-size: 28px;
+      font-weight: 700;
+      letter-spacing: 0.84px;
+    }
   }
 }
 
